@@ -86,6 +86,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\StylableLabel.lsml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\StylableStaticLabel.lsml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

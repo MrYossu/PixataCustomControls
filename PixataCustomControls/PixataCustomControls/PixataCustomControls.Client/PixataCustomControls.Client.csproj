@@ -81,10 +81,17 @@
     <Compile Include="Presentation\Controls\StylableLabel.xaml.cs">
       <DependentUpon>StylableLabel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Controls\StylableStaticLabel.xaml.cs">
+      <DependentUpon>StylableStaticLabel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Presentation\Controls\StylableLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\StylableStaticLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

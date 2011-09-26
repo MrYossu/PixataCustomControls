@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="StylableStaticLabel"
+           SupportedContentItemKind="Value"
+           DesignerImageResource="PixataCustomControls.StylableStaticLabel::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata stylable static label" />
+    </Control.Attributes>
+    <Control.Properties>
+      <!-- *** StylableText *** -->
+      <ControlProperty Name="StylableText"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text" />
+          <Description Value="The text to be displayed" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value=""/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** StylableFontSize *** -->
+      <ControlProperty Name="StylableFontSize"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Font size" />
+          <Description Value="Enter the font size for the label" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="11"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** StylableFontColour *** -->
+      <ControlProperty Name="StylableFontColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:EntityPropertyPicker"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Font colour" />
+          <Description Value="Enter the colour for the label" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** StylableFontBold *** -->
+      <ControlProperty Name="StylableFontBold"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Bold" />
+          <Description Value="Set whether the label should use a bold font or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="False"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- ****** -->
+    </Control.Properties>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+      <SupportedDataType DataType=":Boolean"/>
+      <SupportedDataType DataType=":Byte"/>
+      <SupportedDataType DataType=":DateTime"/>
+      <SupportedDataType DataType=":Decimal"/>
+      <SupportedDataType DataType=":Double"/>
+      <SupportedDataType DataType=":Guid"/>
+      <SupportedDataType DataType=":Int16"/>
+      <SupportedDataType DataType=":Int32"/>
+      <SupportedDataType DataType=":Int64"/>
+      <SupportedDataType DataType=":SByte"/>
+      <SupportedDataType DataType=":Single"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>
