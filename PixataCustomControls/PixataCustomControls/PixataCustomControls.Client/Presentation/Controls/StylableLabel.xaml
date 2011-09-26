@@ -8,8 +8,8 @@
   </UserControl.Resources>
   <sdk:Label x:Name="TheStylableLabel"
              Content="{Binding Value, Mode=TwoWay}"
+             HorizontalAlignment="{Binding Properties[PixataCustomControls:StylableLabel/StylableAlignment]}"
              FontSize="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontSize]}"
              FontWeight="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
-             ToolTipService.ToolTip="{Binding Description}"
-             HorizontalAlignment="Stretch" />
+             ToolTipService.ToolTip="{Binding Description}" />
 </UserControl>

@@ -10,6 +10,23 @@
       <DisplayName Value="Pixata stylable label" />
     </Control.Attributes>
     <Control.Properties>
+      <!-- *** StylableAlignment *** -->
+      <ControlProperty Name="StylableAlignment"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:AlignmentPropertyPicker"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Alignment" />
+          <Description Value="The text alignment" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Left"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
       <!-- *** StylableFontSize *** -->
       <ControlProperty Name="StylableFontSize"
                        PropertyType=":Int32"

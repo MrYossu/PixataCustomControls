@@ -54,6 +54,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editors\AlignmentPropertyPicker.xaml.cs">
+      <DependentUpon>AlignmentPropertyPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\AlignmentPropertyPickerEditor.cs" />
     <Compile Include="Editors\DisplayNameConverter.cs" />
     <Compile Include="Editors\EntityPropertyPicker.xaml.cs">
       <DependentUpon>EntityPropertyPicker.xaml</DependentUpon>
@@ -67,6 +71,10 @@
     <Resource Include="Resources\ControlImages\StylableLabel.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Editors\AlignmentPropertyPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Editors\EntityPropertyPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
