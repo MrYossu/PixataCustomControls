@@ -7,7 +7,7 @@
     <vc:BooleanToBoldVC x:Key="BooleanToBoldVC" />
   </UserControl.Resources>
   <sdk:Label x:Name="TheStylableLabel"
-             Content="{Binding StringValue, Mode=TwoWay}"
+             Content="{Binding Value, Mode=TwoWay}"
              FontSize="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontSize]}"
              FontWeight="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
              ToolTipService.ToolTip="{Binding Description}"
