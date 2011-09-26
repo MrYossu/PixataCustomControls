@@ -1,0 +1,15 @@
+<UserControl xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+             x:Class="PixataCustomControls.Presentation.Controls.StylableLabel"
+             xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <UserControl.Resources>
+    <vc:BooleanToBoldVC x:Key="BooleanToBoldVC" />
+  </UserControl.Resources>
+  <sdk:Label x:Name="TheStylableLabel"
+             Content="{Binding StringValue, Mode=TwoWay}"
+             FontSize="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontSize]}"
+             FontWeight="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
+             ToolTipService.ToolTip="{Binding Description}"
+             HorizontalAlignment="Stretch" />
+</UserControl>

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Vsix", "PixataCustomControls\PixataCustomControls.Vsix\PixataCustomControls.Vsix.csproj", "{60EE159A-9DEF-4B1A-AA3A-413EF8AF8ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Client", "PixataCustomControls\PixataCustomControls.Client\PixataCustomControls.Client.csproj", "{FAD6EBB5-8AC0-481B-A6E3-E202D53B0F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Client.Design", "PixataCustomControls\PixataCustomControls.Client.Design\PixataCustomControls.Client.Design.csproj", "{942704CA-4E5D-45C2-B51E-2C5819ACFF8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Common", "PixataCustomControls\PixataCustomControls.Common\PixataCustomControls.Common.csproj", "{14EF8A91-39A3-4D5D-812C-D9014938BA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Design", "PixataCustomControls\PixataCustomControls.Design\PixataCustomControls.Design.csproj", "{F33255FC-1089-412A-A43F-2416F2FB855A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Lspkg", "PixataCustomControls\PixataCustomControls.Lspkg\PixataCustomControls.Lspkg.csproj", "{58007CB6-8823-4A47-BCF3-37A319619E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixataCustomControls.Server", "PixataCustomControls\PixataCustomControls.Server\PixataCustomControls.Server.csproj", "{AD1BD922-4C2C-42DD-8E55-0DF8A68FC950}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60EE159A-9DEF-4B1A-AA3A-413EF8AF8ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EE159A-9DEF-4B1A-AA3A-413EF8AF8ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EE159A-9DEF-4B1A-AA3A-413EF8AF8ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EE159A-9DEF-4B1A-AA3A-413EF8AF8ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD6EBB5-8AC0-481B-A6E3-E202D53B0F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD6EBB5-8AC0-481B-A6E3-E202D53B0F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD6EBB5-8AC0-481B-A6E3-E202D53B0F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD6EBB5-8AC0-481B-A6E3-E202D53B0F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942704CA-4E5D-45C2-B51E-2C5819ACFF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942704CA-4E5D-45C2-B51E-2C5819ACFF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942704CA-4E5D-45C2-B51E-2C5819ACFF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942704CA-4E5D-45C2-B51E-2C5819ACFF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EF8A91-39A3-4D5D-812C-D9014938BA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EF8A91-39A3-4D5D-812C-D9014938BA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EF8A91-39A3-4D5D-812C-D9014938BA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EF8A91-39A3-4D5D-812C-D9014938BA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F33255FC-1089-412A-A43F-2416F2FB855A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F33255FC-1089-412A-A43F-2416F2FB855A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F33255FC-1089-412A-A43F-2416F2FB855A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F33255FC-1089-412A-A43F-2416F2FB855A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58007CB6-8823-4A47-BCF3-37A319619E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58007CB6-8823-4A47-BCF3-37A319619E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58007CB6-8823-4A47-BCF3-37A319619E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58007CB6-8823-4A47-BCF3-37A319619E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1BD922-4C2C-42DD-8E55-0DF8A68FC950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1BD922-4C2C-42DD-8E55-0DF8A68FC950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1BD922-4C2C-42DD-8E55-0DF8A68FC950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1BD922-4C2C-42DD-8E55-0DF8A68FC950}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
