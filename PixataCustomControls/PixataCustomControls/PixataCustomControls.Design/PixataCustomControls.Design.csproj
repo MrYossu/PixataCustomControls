@@ -54,23 +54,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Editors\DisplayNameConverter.cs" />
-    <Compile Include="Editors\EntityPropertyPicker.xaml.cs">
-      <DependentUpon>EntityPropertyPicker.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\EntityPropertyPickerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\StylableLabelImageProvider.cs" />
     <Compile Include="Resources\StylableStaticLabelImageProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\StylableLabel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Editors\EntityPropertyPicker.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\StylableStaticLabel.png" />

@@ -8,6 +8,7 @@
   <TextBlock x:Name="TheStylableLabel"
              Text="{Binding Value, Mode=TwoWay}"
              HorizontalAlignment="{Binding Properties[PixataCustomControls:StylableLabel/StylableAlignment]}"
+             Foreground="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontColour]}"
              FontSize="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontSize]}"
              FontWeight="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
              ToolTipService.ToolTip="{Binding Description}" />

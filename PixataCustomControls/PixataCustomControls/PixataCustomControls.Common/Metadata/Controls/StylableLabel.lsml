@@ -53,11 +53,57 @@
       <ControlProperty Name="StylableFontColour"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:EntityPropertyPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Font colour" />
           <Description Value="Enter the colour for the label" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Black"
+                          Value="Black" />
+          <SupportedValue DisplayName="Blue"
+                          Value="Blue" />
+          <SupportedValue DisplayName="Brown"
+                          Value="Brown" />
+          <SupportedValue DisplayName="CornflowerBlue"
+                          Value="CornflowerBlue" />
+          <SupportedValue DisplayName="Crimson"
+                          Value="Crimson" />
+          <SupportedValue DisplayName="Cyan"
+                          Value="Cyan" />
+          <SupportedValue DisplayName="DarkBlue"
+                          Value="DarkBlue" />
+          <SupportedValue DisplayName="DarkViolet"
+                          Value="DarkViolet" />
+          <SupportedValue DisplayName="DeepPink"
+                          Value="DeepPink" />
+          <SupportedValue DisplayName="DeepSkyBlue"
+                          Value="DeepSkyBlue" />
+          <SupportedValue DisplayName="ForestGreen"
+                          Value="ForestGreen" />
+          <SupportedValue DisplayName="Gold"
+                          Value="Gold" />
+          <SupportedValue DisplayName="Gray"
+                          Value="Gray" />
+          <SupportedValue DisplayName="Green"
+                          Value="Green" />
+          <SupportedValue DisplayName="LawnGreen"
+                          Value="LawnGreen" />
+          <SupportedValue DisplayName="Lime"
+                          Value="Lime" />
+          <SupportedValue DisplayName="Magenta"
+                          Value="Magenta" />
+          <SupportedValue DisplayName="Navy"
+                          Value="Navy" />
+          <SupportedValue DisplayName="Olive"
+                          Value="Olive" />
+          <SupportedValue DisplayName="Orange"
+                          Value="Orange" />
+          <SupportedValue DisplayName="OrangeRed"
+                          Value="OrangeRed" />
+          <SupportedValue DisplayName="Red"
+                          Value="Red" />
+          <SupportedValue DisplayName="White"
+                          Value="White" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>

@@ -7,28 +7,9 @@ using System.Windows.Media;
 using Microsoft.LightSwitch.Presentation;
 
 namespace PixataCustomControls.Presentation.Controls {
-  public partial class StylableLabel : UserControl {
+  public partial class StylableLabel : UserControl, IPixataStylableControl {
     public StylableLabel() {
       InitializeComponent();
-      SetBinding(StylableFontColourProperty, new Binding("Properties[PixataCustomControls:StylableLabel/StylableFontColour]"));
-    }
-
-    // dependency property for the font colour
-    public string StylableFontColour {
-      get {
-        return (string)GetValue(StylableFontColourProperty);
-      }
-      set {
-        SetValue(StylableFontColourProperty, value);
-      }
-    }
-
-    public static readonly DependencyProperty StylableFontColourProperty = DependencyProperty.Register("StylableFontColourProperty", typeof(string), typeof(StylableLabel), new PropertyMetadata(OnStylableFontColourPropertyChanged));
-
-    private static void OnStylableFontColourPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
-      // When the ContentItem is changed, reset the internal data binding.
-      StylableLabel styLbl = (StylableLabel)d;
-      styLbl.TheStylableLabel.Foreground = new SolidColorBrush(ColourUtils.GetColourFromName(styLbl.StylableFontColour));
     }
   }
 
