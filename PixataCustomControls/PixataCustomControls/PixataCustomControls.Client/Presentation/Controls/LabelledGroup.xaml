@@ -6,12 +6,13 @@
 
     <ItemsControl.ItemsPanel>
       <ItemsPanelTemplate>
-        <StackPanel Orientation="Horizontal" />
+        <StackPanel Orientation="Vertical" />
       </ItemsPanelTemplate>
     </ItemsControl.ItemsPanel>
     <ItemsControl.ItemTemplate>
       <DataTemplate>
-        <framework:ContentItemPresenter ContentItem="{Binding}" />
+        <framework:ContentItemPresenter ContentItem="{Binding}"
+                                        Margin="4" />
       </DataTemplate>
     </ItemsControl.ItemTemplate>
   </ItemsControl>
