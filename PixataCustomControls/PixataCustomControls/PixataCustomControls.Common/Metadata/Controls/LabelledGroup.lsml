@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="LabelledGroup"
+           SupportedContentItemKind="Group"
+           AttachedLabelSupport="DisplayedByContainer"
+           DesignerImageResource="PixataCustomControls.LabelledGroup::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Labelled Group" />
+    </Control.Attributes>
+    <Control.PropertyOverrides>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[AttachedLabelPosition]"
+        EditorVisibility="PropertySheet">
+      </ControlPropertyOverride>
+    </Control.PropertyOverrides>
+  </Control>
+
+</ModelFragment>

@@ -79,6 +79,9 @@
     <Compile Include="Presentation\Controls\BooleanToBoldVC.cs" />
     <Compile Include="Presentation\Controls\ColourUtils.cs" />
     <Compile Include="Presentation\Controls\IPixataStylableControl.cs" />
+    <Compile Include="Presentation\Controls\LabelledGroup.xaml.cs">
+      <DependentUpon>LabelledGroup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Controls\StylableLabel.xaml.cs">
       <DependentUpon>StylableLabel.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Presentation\Controls\LabelledGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Presentation\Controls\StylableLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
