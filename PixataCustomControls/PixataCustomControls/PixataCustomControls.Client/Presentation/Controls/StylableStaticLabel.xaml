@@ -1,13 +1,12 @@
-<UserControl xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
-             x:Class="PixataCustomControls.Presentation.Controls.StylableStaticLabel"
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.StylableStaticLabel"
              xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <UserControl.Resources>
     <vc:BooleanToBoldVC x:Key="BooleanToBoldVC" />
   </UserControl.Resources>
-  <sdk:Label x:Name="TheStylableStaticLabel"
-             Content="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableText]}"
+  <TextBlock x:Name="TheStylableStaticLabel"
+             Text="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableText]}"
              HorizontalAlignment="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableAlignment]}"
              FontSize="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontSize]}"
              FontWeight="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
