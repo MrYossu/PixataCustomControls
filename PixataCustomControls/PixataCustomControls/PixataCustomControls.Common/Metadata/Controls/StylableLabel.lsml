@@ -14,11 +14,17 @@
       <ControlProperty Name="StylableAlignment"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:AlignmentPropertyPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Alignment" />
           <Description Value="The text alignment" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Left"
+                          Value="Left" />
+          <SupportedValue DisplayName="Centre"
+                          Value="Center" />
+          <SupportedValue DisplayName="Right"
+                          Value="Right" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
