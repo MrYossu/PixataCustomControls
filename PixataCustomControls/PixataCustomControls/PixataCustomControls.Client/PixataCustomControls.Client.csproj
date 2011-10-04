@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Presentation\Controls\BooleanToBoldVC.cs" />
     <Compile Include="Presentation\Controls\ColourUtils.cs" />
+    <Compile Include="Presentation\Controls\IntToBorderVC.cs" />
     <Compile Include="Presentation\Controls\LabelledGroup.xaml.cs">
       <DependentUpon>LabelledGroup.xaml</DependentUpon>
     </Compile>

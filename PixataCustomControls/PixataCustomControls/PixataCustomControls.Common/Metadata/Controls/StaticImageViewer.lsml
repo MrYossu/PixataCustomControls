@@ -9,14 +9,107 @@
     <Control.Attributes>
       <DisplayName Value="Pixata Static Image Viewer" />
     </Control.Attributes>
-    <Control.SupportedDataTypes>
-      <SupportedDataType DataType=":String"/>
-    </Control.SupportedDataTypes>
+    <Control.Properties>
+      <!-- *** BorderColour *** -->
+      <ControlProperty Name="BorderColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Border colour" />
+          <Description Value="Enter the colour for the image border" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Black"
+                          Value="Black" />
+          <SupportedValue DisplayName="Blue"
+                          Value="Blue" />
+          <SupportedValue DisplayName="Brown"
+                          Value="Brown" />
+          <SupportedValue DisplayName="CornflowerBlue"
+                          Value="CornflowerBlue" />
+          <SupportedValue DisplayName="Crimson"
+                          Value="Crimson" />
+          <SupportedValue DisplayName="Cyan"
+                          Value="Cyan" />
+          <SupportedValue DisplayName="DarkBlue"
+                          Value="DarkBlue" />
+          <SupportedValue DisplayName="DarkViolet"
+                          Value="DarkViolet" />
+          <SupportedValue DisplayName="DeepPink"
+                          Value="DeepPink" />
+          <SupportedValue DisplayName="DeepSkyBlue"
+                          Value="DeepSkyBlue" />
+          <SupportedValue DisplayName="ForestGreen"
+                          Value="ForestGreen" />
+          <SupportedValue DisplayName="Gold"
+                          Value="Gold" />
+          <SupportedValue DisplayName="Gray"
+                          Value="Gray" />
+          <SupportedValue DisplayName="Green"
+                          Value="Green" />
+          <SupportedValue DisplayName="LawnGreen"
+                          Value="LawnGreen" />
+          <SupportedValue DisplayName="Lime"
+                          Value="Lime" />
+          <SupportedValue DisplayName="Magenta"
+                          Value="Magenta" />
+          <SupportedValue DisplayName="Navy"
+                          Value="Navy" />
+          <SupportedValue DisplayName="Olive"
+                          Value="Olive" />
+          <SupportedValue DisplayName="Orange"
+                          Value="Orange" />
+          <SupportedValue DisplayName="OrangeRed"
+                          Value="OrangeRed" />
+          <SupportedValue DisplayName="Red"
+                          Value="Red" />
+          <SupportedValue DisplayName="White"
+                          Value="White" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** BorderThickness *** -->
+      <ControlProperty Name="BorderThickness"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Border thickness" />
+          <Description Value="Enter the thickness of the image border (zero for no border)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="1"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- ****** -->
+    </Control.Properties>
     <Control.PropertyOverrides>
       <ControlPropertyOverride
         Property=":RootControl/Properties[Image]"
         EditorVisibility="PropertySheet"/>
     </Control.PropertyOverrides>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+      <SupportedDataType DataType=":Boolean"/>
+      <SupportedDataType DataType=":Byte"/>
+      <SupportedDataType DataType=":DateTime"/>
+      <SupportedDataType DataType=":Decimal"/>
+      <SupportedDataType DataType=":Double"/>
+      <SupportedDataType DataType=":Guid"/>
+      <SupportedDataType DataType=":Int16"/>
+      <SupportedDataType DataType=":Int32"/>
+      <SupportedDataType DataType=":Int64"/>
+      <SupportedDataType DataType=":SByte"/>
+      <SupportedDataType DataType=":Single"/>
+    </Control.SupportedDataTypes>
   </Control>
 
 </ModelFragment>

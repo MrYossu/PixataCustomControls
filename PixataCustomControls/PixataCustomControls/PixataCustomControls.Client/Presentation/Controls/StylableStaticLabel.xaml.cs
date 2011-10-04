@@ -1,9 +1,7 @@
-using System.Windows.Data;
 using System.ComponentModel.Composition;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
-using System.Windows.Media;
 using Microsoft.LightSwitch.Presentation;
 
 namespace PixataCustomControls.Presentation.Controls {
