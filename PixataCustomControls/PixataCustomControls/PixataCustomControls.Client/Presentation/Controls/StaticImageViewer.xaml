@@ -8,6 +8,13 @@
   </UserControl.Resources>
   <Border BorderBrush="{Binding Properties[PixataCustomControls:StaticImageViewer/BorderColour]}"
           BorderThickness="{Binding Properties[PixataCustomControls:StaticImageViewer/BorderThickness], Converter={StaticResource DebuggerVC}}">
+    <Border.Effect>
+      <DropShadowEffect Color="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowColour]}"
+                        Direction="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowDirection]}"
+                        ShadowDepth="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowDepth]}"
+                        BlurRadius="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowBlurRadius]}"
+                        Opacity="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowOpacity]}" />
+    </Border.Effect>
     <Image x:Name="ImageViewer" />
   </Border>
 </UserControl>
