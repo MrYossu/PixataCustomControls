@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="StaticImageViewer"
+           SupportedContentItemKind="Value"
+           DesignerImageResource="PixataCustomControls.StaticImageViewer::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Static Image Viewer" />
+    </Control.Attributes>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+    </Control.SupportedDataTypes>
+    <Control.PropertyOverrides>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[Image]"
+        EditorVisibility="PropertySheet"/>
+    </Control.PropertyOverrides>
+  </Control>
+
+</ModelFragment>

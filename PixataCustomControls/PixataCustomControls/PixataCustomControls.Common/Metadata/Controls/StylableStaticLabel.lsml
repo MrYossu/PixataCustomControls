@@ -7,7 +7,7 @@
            SupportedContentItemKind="Value"
            DesignerImageResource="PixataCustomControls.StylableStaticLabel::ControlImage">
     <Control.Attributes>
-      <DisplayName Value="Pixata stylable static label" />
+      <DisplayName Value="Pixata Stylable Static Label" />
     </Control.Attributes>
     <Control.Properties>
       <!-- *** StylableText *** -->

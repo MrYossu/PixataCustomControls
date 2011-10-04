@@ -92,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\LabelledGroup.lsml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\StaticImageViewer.lsml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

@@ -7,10 +7,20 @@ using System.Windows.Media;
 using Microsoft.LightSwitch.Presentation;
 
 namespace PixataCustomControls.Presentation.Controls {
-  public partial class StylableLabel : UserControl, IPixataStylableControl {
+  public partial class StylableLabel : UserControl, IContentVisual {
     public StylableLabel() {
       InitializeComponent();
     }
+
+    public object Control {
+      get {
+        return TheStylableLabel;
+      }
+    }
+
+    public void Show() {
+    }
+
   }
 
   [Export(typeof(IControlFactory))]

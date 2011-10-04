@@ -7,7 +7,7 @@
            SupportedContentItemKind="Value"
            DesignerImageResource="PixataCustomControls.StylableLabel::ControlImage">
     <Control.Attributes>
-      <DisplayName Value="Pixata stylable label" />
+      <DisplayName Value="Pixata Stylable Label" />
     </Control.Attributes>
     <Control.Properties>
       <!-- *** StylableAlignment *** -->
