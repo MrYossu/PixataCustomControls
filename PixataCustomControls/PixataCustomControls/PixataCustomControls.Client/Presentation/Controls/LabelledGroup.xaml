@@ -2,7 +2,8 @@
              xmlns:framework="clr-namespace:Microsoft.LightSwitch.Presentation.Framework;assembly=Microsoft.LightSwitch.Client"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ItemsControl ItemsSource="{Binding ChildItems}">
+  <ItemsControl ItemsSource="{Binding ChildItems}"
+                Padding="0">
 
     <ItemsControl.ItemsPanel>
       <ItemsPanelTemplate>
@@ -12,7 +13,8 @@
     <ItemsControl.ItemTemplate>
       <DataTemplate>
         <framework:ContentItemPresenter ContentItem="{Binding}"
-                                        Margin="4" />
+                                        Margin="0,4,4,4"
+                                        Padding="0" />
       </DataTemplate>
     </ItemsControl.ItemTemplate>
   </ItemsControl>
