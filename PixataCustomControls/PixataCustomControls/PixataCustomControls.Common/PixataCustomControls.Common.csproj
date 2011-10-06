@@ -95,6 +95,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\StaticImageViewer.lsml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\Spacer.lsml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\HorizontalDivider.lsml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\VerticalDivider.lsml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

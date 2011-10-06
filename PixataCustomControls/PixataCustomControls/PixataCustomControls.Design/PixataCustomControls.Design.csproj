@@ -55,10 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\HorizontalDividerImageProvider.cs" />
     <Compile Include="Resources\LabelledGroupImageProvider.cs" />
+    <Compile Include="Resources\SpacerImageProvider.cs" />
     <Compile Include="Resources\StaticImageViewerImageProvider.cs" />
     <Compile Include="Resources\StylableLabelImageProvider.cs" />
     <Compile Include="Resources\StylableStaticLabelImageProvider.cs" />
+    <Compile Include="Resources\VerticalDividerImageProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\StylableLabel.png" />
@@ -71,6 +74,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\StaticImageViewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\Spacer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\HorizontalDivider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\VerticalDivider.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

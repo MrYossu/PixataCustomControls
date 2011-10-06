@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="VerticalDivider"
+           SupportedContentItemKind="Value"
+           AttachedLabelSupport="DisplayedByControl"
+           DesignerImageResource="PixataCustomControls.VerticalDivider::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Vertical Divider" />
+    </Control.Attributes>
+    <Control.Properties>
+      <!-- *** DividerWidth *** -->
+      <ControlProperty Name="DividerWidth"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Width" />
+          <Description Value="Enter the width of the divider" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="1"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** DividerColour *** -->
+      <ControlProperty Name="DividerColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Divider colour" />
+          <Description Value="Enter the colour for the divider" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Black"
+                          Value="Black" />
+          <SupportedValue DisplayName="Blue"
+                          Value="Blue" />
+          <SupportedValue DisplayName="Brown"
+                          Value="Brown" />
+          <SupportedValue DisplayName="CornflowerBlue"
+                          Value="CornflowerBlue" />
+          <SupportedValue DisplayName="Crimson"
+                          Value="Crimson" />
+          <SupportedValue DisplayName="Cyan"
+                          Value="Cyan" />
+          <SupportedValue DisplayName="DarkBlue"
+                          Value="DarkBlue" />
+          <SupportedValue DisplayName="DarkViolet"
+                          Value="DarkViolet" />
+          <SupportedValue DisplayName="DeepPink"
+                          Value="DeepPink" />
+          <SupportedValue DisplayName="DeepSkyBlue"
+                          Value="DeepSkyBlue" />
+          <SupportedValue DisplayName="ForestGreen"
+                          Value="ForestGreen" />
+          <SupportedValue DisplayName="Gold"
+                          Value="Gold" />
+          <SupportedValue DisplayName="Gray"
+                          Value="Gray" />
+          <SupportedValue DisplayName="Green"
+                          Value="Green" />
+          <SupportedValue DisplayName="LawnGreen"
+                          Value="LawnGreen" />
+          <SupportedValue DisplayName="Lime"
+                          Value="Lime" />
+          <SupportedValue DisplayName="Magenta"
+                          Value="Magenta" />
+          <SupportedValue DisplayName="Navy"
+                          Value="Navy" />
+          <SupportedValue DisplayName="Olive"
+                          Value="Olive" />
+          <SupportedValue DisplayName="Orange"
+                          Value="Orange" />
+          <SupportedValue DisplayName="OrangeRed"
+                          Value="OrangeRed" />
+          <SupportedValue DisplayName="Red"
+                          Value="Red" />
+          <SupportedValue DisplayName="White"
+                          Value="White" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+    </Control.Properties>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>

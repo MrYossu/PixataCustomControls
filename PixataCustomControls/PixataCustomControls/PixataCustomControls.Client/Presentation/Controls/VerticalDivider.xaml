@@ -1,0 +1,7 @@
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.VerticalDivider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Rectangle VerticalAlignment="Stretch"
+             Width="{Binding Properties[PixataCustomControls:VerticalDivider/DividerWidth]}"
+             Fill="{Binding Properties[PixataCustomControls:VerticalDivider/DividerColour]}" />
+</UserControl>
