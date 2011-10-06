@@ -4,13 +4,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <UserControl.Resources>
     <vc:BooleanToBoldVC x:Key="BooleanToBoldVC" />
+    <vc:IntToBorderVC x:Key="IntToBorderVC" />
   </UserControl.Resources>
-  <TextBlock x:Name="TheStylableStaticLabel"
-             Text="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableText]}"
-             HorizontalAlignment="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableAlignment]}"
-             Foreground="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontColour]}"
-             FontSize="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontSize]}"
-             FontWeight="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
-             ToolTipService.ToolTip="{Binding Description}"
-             />
+  <Border BorderBrush="{Binding Properties[PixataCustomControls:StylableStaticLabel/BorderColour]}"
+          BorderThickness="{Binding Properties[PixataCustomControls:StylableStaticLabel/BorderThickness], Converter={StaticResource IntToBorderVC}}">
+    <Border.Effect>
+      <DropShadowEffect Color="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowColour]}"
+                        Direction="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowDirection]}"
+                        ShadowDepth="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowDepth]}"
+                        BlurRadius="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowBlurRadius]}"
+                        Opacity="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowOpacity]}" />
+    </Border.Effect>
+    <TextBlock x:Name="TheStylableStaticLabel"
+               Text="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableText]}"
+               HorizontalAlignment="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableAlignment]}"
+               Foreground="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontColour]}"
+               FontSize="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontSize]}"
+               FontWeight="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
+               ToolTipService.ToolTip="{Binding Description}" />
+  </Border>
 </UserControl>

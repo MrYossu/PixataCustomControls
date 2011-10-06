@@ -4,10 +4,10 @@
              xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
              Loaded="UserControl_Loaded">
   <UserControl.Resources>
-    <vc:IntToBorderVC x:Key="DebuggerVC" />
+    <vc:IntToBorderVC x:Key="IntToBorderVC" />
   </UserControl.Resources>
   <Border BorderBrush="{Binding Properties[PixataCustomControls:StaticImageViewer/BorderColour]}"
-          BorderThickness="{Binding Properties[PixataCustomControls:StaticImageViewer/BorderThickness], Converter={StaticResource DebuggerVC}}">
+          BorderThickness="{Binding Properties[PixataCustomControls:StaticImageViewer/BorderThickness], Converter={StaticResource IntToBorderVC}}">
     <Border.Effect>
       <DropShadowEffect Color="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowColour]}"
                         Direction="{Binding Properties[PixataCustomControls:StaticImageViewer/ShadowDirection]}"

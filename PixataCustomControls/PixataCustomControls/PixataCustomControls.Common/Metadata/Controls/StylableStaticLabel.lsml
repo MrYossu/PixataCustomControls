@@ -144,6 +144,212 @@
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
+      <!-- *** BorderColour *** -->
+      <ControlProperty Name="BorderColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Border colour" />
+          <Description Value="Enter the colour for the image border" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Black"
+                          Value="Black" />
+          <SupportedValue DisplayName="Blue"
+                          Value="Blue" />
+          <SupportedValue DisplayName="Brown"
+                          Value="Brown" />
+          <SupportedValue DisplayName="CornflowerBlue"
+                          Value="CornflowerBlue" />
+          <SupportedValue DisplayName="Crimson"
+                          Value="Crimson" />
+          <SupportedValue DisplayName="Cyan"
+                          Value="Cyan" />
+          <SupportedValue DisplayName="DarkBlue"
+                          Value="DarkBlue" />
+          <SupportedValue DisplayName="DarkViolet"
+                          Value="DarkViolet" />
+          <SupportedValue DisplayName="DeepPink"
+                          Value="DeepPink" />
+          <SupportedValue DisplayName="DeepSkyBlue"
+                          Value="DeepSkyBlue" />
+          <SupportedValue DisplayName="ForestGreen"
+                          Value="ForestGreen" />
+          <SupportedValue DisplayName="Gold"
+                          Value="Gold" />
+          <SupportedValue DisplayName="Gray"
+                          Value="Gray" />
+          <SupportedValue DisplayName="Green"
+                          Value="Green" />
+          <SupportedValue DisplayName="LawnGreen"
+                          Value="LawnGreen" />
+          <SupportedValue DisplayName="Lime"
+                          Value="Lime" />
+          <SupportedValue DisplayName="Magenta"
+                          Value="Magenta" />
+          <SupportedValue DisplayName="Navy"
+                          Value="Navy" />
+          <SupportedValue DisplayName="Olive"
+                          Value="Olive" />
+          <SupportedValue DisplayName="Orange"
+                          Value="Orange" />
+          <SupportedValue DisplayName="OrangeRed"
+                          Value="OrangeRed" />
+          <SupportedValue DisplayName="Red"
+                          Value="Red" />
+          <SupportedValue DisplayName="White"
+                          Value="White" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** BorderThickness *** -->
+      <ControlProperty Name="BorderThickness"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Border thickness" />
+          <Description Value="Enter the thickness of the image border (zero for no border)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="0"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** ShadowColour *** -->
+      <ControlProperty Name="ShadowColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Drop shadow colour" />
+          <Description Value="Enter the colour for the drop shadow" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Black"
+                          Value="Black" />
+          <SupportedValue DisplayName="Blue"
+                          Value="Blue" />
+          <SupportedValue DisplayName="Brown"
+                          Value="Brown" />
+          <SupportedValue DisplayName="CornflowerBlue"
+                          Value="CornflowerBlue" />
+          <SupportedValue DisplayName="Crimson"
+                          Value="Crimson" />
+          <SupportedValue DisplayName="Cyan"
+                          Value="Cyan" />
+          <SupportedValue DisplayName="DarkBlue"
+                          Value="DarkBlue" />
+          <SupportedValue DisplayName="DarkViolet"
+                          Value="DarkViolet" />
+          <SupportedValue DisplayName="DeepPink"
+                          Value="DeepPink" />
+          <SupportedValue DisplayName="DeepSkyBlue"
+                          Value="DeepSkyBlue" />
+          <SupportedValue DisplayName="ForestGreen"
+                          Value="ForestGreen" />
+          <SupportedValue DisplayName="Gold"
+                          Value="Gold" />
+          <SupportedValue DisplayName="Gray"
+                          Value="Gray" />
+          <SupportedValue DisplayName="Green"
+                          Value="Green" />
+          <SupportedValue DisplayName="LawnGreen"
+                          Value="LawnGreen" />
+          <SupportedValue DisplayName="Lime"
+                          Value="Lime" />
+          <SupportedValue DisplayName="Magenta"
+                          Value="Magenta" />
+          <SupportedValue DisplayName="Navy"
+                          Value="Navy" />
+          <SupportedValue DisplayName="Olive"
+                          Value="Olive" />
+          <SupportedValue DisplayName="Orange"
+                          Value="Orange" />
+          <SupportedValue DisplayName="OrangeRed"
+                          Value="OrangeRed" />
+          <SupportedValue DisplayName="Red"
+                          Value="Red" />
+          <SupportedValue DisplayName="White"
+                          Value="White" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** ShadowDirection *** -->
+      <ControlProperty Name="ShadowDirection"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Drop shadow direction (0-359)" />
+          <Description Value="Enter the direction for the drop shadow (must be between 0 and 359)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="320"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** ShadowDepth *** -->
+      <ControlProperty Name="ShadowDepth"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Drop shadow depth" />
+          <Description Value="Enter the depth of the drop shadow" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="10"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** ShadowBlurRadius *** -->
+      <ControlProperty Name="ShadowBlurRadius"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Drop shadow radius" />
+          <Description Value="Enter the blur radius of the drop shadow" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="10"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** ShadowOpacity *** -->
+      <ControlProperty Name="ShadowOpacity"
+                       PropertyType=":Double"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Drop shadow opacity" />
+          <Description Value="Enter the opacity of the drop shadow (0-1, where 0 is invisible, and 1 is solid)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Double"
+                                Value="0"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
       <!-- ****** -->
     </Control.Properties>
     <Control.SupportedDataTypes>
