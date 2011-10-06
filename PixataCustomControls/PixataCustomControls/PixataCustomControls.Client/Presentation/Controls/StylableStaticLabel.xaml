@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <UserControl.Resources>
     <vc:BooleanToBoldVC x:Key="BooleanToBoldVC" />
+    <vc:BooleanToItalicVC x:Key="BooleanToItalicVC" />
     <vc:IntToBorderVC x:Key="IntToBorderVC" />
   </UserControl.Resources>
   <Border BorderBrush="{Binding Properties[PixataCustomControls:StylableStaticLabel/BorderColour]}"
@@ -21,6 +22,7 @@
                Foreground="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontColour]}"
                FontSize="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontSize]}"
                FontWeight="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
+               FontStyle="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableFontItalic], Converter={StaticResource BooleanToItalicVC}}"
                ToolTipService.ToolTip="{Binding Description}" />
   </Border>
 </UserControl>

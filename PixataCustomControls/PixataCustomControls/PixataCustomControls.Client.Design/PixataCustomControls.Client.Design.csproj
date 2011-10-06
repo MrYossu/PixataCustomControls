@@ -76,6 +76,7 @@
     <Compile Include="Resources\StaticImageViewerImageProvider.cs" />
     <Compile Include="Resources\StylableLabelImageProvider.cs" />
     <Compile Include="Resources\StylableStaticLabelImageProvider.cs" />
+    <Compile Include="Resources\StylableTextBoxImageProvider.cs" />
     <Compile Include="Resources\VerticalDividerImageProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\VerticalDivider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\StylableTextBox.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

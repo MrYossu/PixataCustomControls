@@ -61,6 +61,7 @@
     <Compile Include="Resources\StaticImageViewerImageProvider.cs" />
     <Compile Include="Resources\StylableLabelImageProvider.cs" />
     <Compile Include="Resources\StylableStaticLabelImageProvider.cs" />
+    <Compile Include="Resources\StylableTextBoxImageProvider.cs" />
     <Compile Include="Resources\VerticalDividerImageProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\VerticalDivider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\StylableTextBox.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

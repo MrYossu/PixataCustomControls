@@ -1,0 +1,17 @@
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.StylableTextBox"
+             xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <UserControl.Resources>
+    <vc:BooleanToBoldVC x:Key="BooleanToBoldVC" />
+    <vc:BooleanToItalicVC x:Key="BooleanToItalicVC" />
+  </UserControl.Resources>
+  <TextBox x:Name="TheStylableTextBox"
+           Text="{Binding StringValue, Mode=TwoWay}"
+           Background="{Binding Properties[PixataCustomControls:StylableTextBox/StylableBackgroundColour]}"
+           BorderBrush="{Binding Properties[PixataCustomControls:StylableTextBox/StylableBorderColour]}"
+           FontSize="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontSize]}"
+           FontWeight="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
+           FontStyle="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontItalic], Converter={StaticResource BooleanToItalicVC}}"
+           ToolTipService.ToolTip="{Binding Description}" />
+</UserControl>

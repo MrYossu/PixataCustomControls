@@ -3,52 +3,13 @@
   xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-  <Control Name="StylableStaticLabel"
+  <Control Name="StylableTextBox"
            SupportedContentItemKind="Value"
-           DesignerImageResource="PixataCustomControls.StylableStaticLabel::ControlImage">
+           DesignerImageResource="PixataCustomControls.StylableTextBox::ControlImage">
     <Control.Attributes>
-      <DisplayName Value="Pixata Stylable Static Label" />
+      <DisplayName Value="Pixata Stylable TextBox" />
     </Control.Attributes>
     <Control.Properties>
-      <!-- *** StylableText *** -->
-      <ControlProperty Name="StylableText"
-                       PropertyType=":String"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Text" />
-          <Description Value="The text to be displayed" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":String"
-                                Value=""/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** StylableAlignment *** -->
-      <ControlProperty Name="StylableAlignment"
-                       PropertyType=":String"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Alignment" />
-          <Description Value="The text alignment" />
-          <SupportedValuesExclusive />
-          <SupportedValue DisplayName="Left"
-                          Value="Left" />
-          <SupportedValue DisplayName="Centre"
-                          Value="Center" />
-          <SupportedValue DisplayName="Right"
-                          Value="Right" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":String"
-                                Value="Left"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
       <!-- *** StylableFontSize *** -->
       <ControlProperty Name="StylableFontSize"
                        PropertyType=":Int32"
@@ -56,311 +17,12 @@
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Font size" />
-          <Description Value="Enter the font size for the label" />
+          <Description Value="Enter the font size for the textbox" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":Int32"
                                 Value="11"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** StylableFontColour *** -->
-      <ControlProperty Name="StylableFontColour"
-                       PropertyType=":String"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Font colour" />
-          <Description Value="Enter the colour for the label" />
-          <SupportedValuesExclusive />
-          <SupportedValue DisplayName="AliceBlue"
-                          Value="AliceBlue" />
-          <SupportedValue DisplayName="AntiqueWhite"
-                          Value="AntiqueWhite" />
-          <SupportedValue DisplayName="Aqua"
-                          Value="Aqua" />
-          <SupportedValue DisplayName="Aquamarine"
-                          Value="Aquamarine" />
-          <SupportedValue DisplayName="Azure"
-                          Value="Azure" />
-          <SupportedValue DisplayName="Beige"
-                          Value="Beige" />
-          <SupportedValue DisplayName="Bisque"
-                          Value="Bisque" />
-          <SupportedValue DisplayName="Black"
-                          Value="Black" />
-          <SupportedValue DisplayName="BlanchedAlmond"
-                          Value="BlanchedAlmond" />
-          <SupportedValue DisplayName="Blue"
-                          Value="Blue" />
-          <SupportedValue DisplayName="BlueViolet"
-                          Value="BlueViolet" />
-          <SupportedValue DisplayName="Brown"
-                          Value="Brown" />
-          <SupportedValue DisplayName="BurlyWood"
-                          Value="BurlyWood" />
-          <SupportedValue DisplayName="CadetBlue"
-                          Value="CadetBlue" />
-          <SupportedValue DisplayName="Chartreuse"
-                          Value="Chartreuse" />
-          <SupportedValue DisplayName="Chocolate"
-                          Value="Chocolate" />
-          <SupportedValue DisplayName="Coral"
-                          Value="Coral" />
-          <SupportedValue DisplayName="CornflowerBlue"
-                          Value="CornflowerBlue" />
-          <SupportedValue DisplayName="Cornsilk"
-                          Value="Cornsilk" />
-          <SupportedValue DisplayName="Crimson"
-                          Value="Crimson" />
-          <SupportedValue DisplayName="Cyan"
-                          Value="Cyan" />
-          <SupportedValue DisplayName="DarkBlue"
-                          Value="DarkBlue" />
-          <SupportedValue DisplayName="DarkCyan"
-                          Value="DarkCyan" />
-          <SupportedValue DisplayName="DarkGoldenrod"
-                          Value="DarkGoldenrod" />
-          <SupportedValue DisplayName="DarkGray"
-                          Value="DarkGray" />
-          <SupportedValue DisplayName="DarkGreen"
-                          Value="DarkGreen" />
-          <SupportedValue DisplayName="DarkKhaki"
-                          Value="DarkKhaki" />
-          <SupportedValue DisplayName="DarkMagenta"
-                          Value="DarkMagenta" />
-          <SupportedValue DisplayName="DarkOliveGreen"
-                          Value="DarkOliveGreen" />
-          <SupportedValue DisplayName="DarkOrange"
-                          Value="DarkOrange" />
-          <SupportedValue DisplayName="DarkOrchid"
-                          Value="DarkOrchid" />
-          <SupportedValue DisplayName="DarkRed"
-                          Value="DarkRed" />
-          <SupportedValue DisplayName="DarkSalmon"
-                          Value="DarkSalmon" />
-          <SupportedValue DisplayName="DarkSeaGreen"
-                          Value="DarkSeaGreen" />
-          <SupportedValue DisplayName="DarkSlateBlue"
-                          Value="DarkSlateBlue" />
-          <SupportedValue DisplayName="DarkSlateGray"
-                          Value="DarkSlateGray" />
-          <SupportedValue DisplayName="DarkTurquoise"
-                          Value="DarkTurquoise" />
-          <SupportedValue DisplayName="DarkViolet"
-                          Value="DarkViolet" />
-          <SupportedValue DisplayName="DeepPink"
-                          Value="DeepPink" />
-          <SupportedValue DisplayName="DeepSkyBlue"
-                          Value="DeepSkyBlue" />
-          <SupportedValue DisplayName="DimGray"
-                          Value="DimGray" />
-          <SupportedValue DisplayName="DodgerBlue"
-                          Value="DodgerBlue" />
-          <SupportedValue DisplayName="Firebrick"
-                          Value="Firebrick" />
-          <SupportedValue DisplayName="FloralWhite"
-                          Value="FloralWhite" />
-          <SupportedValue DisplayName="ForestGreen"
-                          Value="ForestGreen" />
-          <SupportedValue DisplayName="Fuchsia"
-                          Value="Fuchsia" />
-          <SupportedValue DisplayName="Gainsboro"
-                          Value="Gainsboro" />
-          <SupportedValue DisplayName="GhostWhite"
-                          Value="GhostWhite" />
-          <SupportedValue DisplayName="Gold"
-                          Value="Gold" />
-          <SupportedValue DisplayName="Goldenrod"
-                          Value="Goldenrod" />
-          <SupportedValue DisplayName="Gray"
-                          Value="Gray" />
-          <SupportedValue DisplayName="Green"
-                          Value="Green" />
-          <SupportedValue DisplayName="GreenYellow"
-                          Value="GreenYellow" />
-          <SupportedValue DisplayName="Honeydew"
-                          Value="Honeydew" />
-          <SupportedValue DisplayName="HotPink"
-                          Value="HotPink" />
-          <SupportedValue DisplayName="IndianRed"
-                          Value="IndianRed" />
-          <SupportedValue DisplayName="Indigo"
-                          Value="Indigo" />
-          <SupportedValue DisplayName="Ivory"
-                          Value="Ivory" />
-          <SupportedValue DisplayName="Khaki"
-                          Value="Khaki" />
-          <SupportedValue DisplayName="Lavender"
-                          Value="Lavender" />
-          <SupportedValue DisplayName="LavenderBlush"
-                          Value="LavenderBlush" />
-          <SupportedValue DisplayName="LawnGreen"
-                          Value="LawnGreen" />
-          <SupportedValue DisplayName="LemonChiffon"
-                          Value="LemonChiffon" />
-          <SupportedValue DisplayName="LightBlue"
-                          Value="LightBlue" />
-          <SupportedValue DisplayName="LightCoral"
-                          Value="LightCoral" />
-          <SupportedValue DisplayName="LightCyan"
-                          Value="LightCyan" />
-          <SupportedValue DisplayName="LightGoldenrodYellow"
-                          Value="LightGoldenrodYellow" />
-          <SupportedValue DisplayName="LightGray"
-                          Value="LightGray" />
-          <SupportedValue DisplayName="LightGreen"
-                          Value="LightGreen" />
-          <SupportedValue DisplayName="LightPink"
-                          Value="LightPink" />
-          <SupportedValue DisplayName="LightSalmon"
-                          Value="LightSalmon" />
-          <SupportedValue DisplayName="LightSeaGreen"
-                          Value="LightSeaGreen" />
-          <SupportedValue DisplayName="LightSkyBlue"
-                          Value="LightSkyBlue" />
-          <SupportedValue DisplayName="LightSlateGray"
-                          Value="LightSlateGray" />
-          <SupportedValue DisplayName="LightSteelBlue"
-                          Value="LightSteelBlue" />
-          <SupportedValue DisplayName="LightYellow"
-                          Value="LightYellow" />
-          <SupportedValue DisplayName="Lime"
-                          Value="Lime" />
-          <SupportedValue DisplayName="LimeGreen"
-                          Value="LimeGreen" />
-          <SupportedValue DisplayName="Linen"
-                          Value="Linen" />
-          <SupportedValue DisplayName="Magenta"
-                          Value="Magenta" />
-          <SupportedValue DisplayName="Maroon"
-                          Value="Maroon" />
-          <SupportedValue DisplayName="MediumAquamarine"
-                          Value="MediumAquamarine" />
-          <SupportedValue DisplayName="MediumBlue"
-                          Value="MediumBlue" />
-          <SupportedValue DisplayName="MediumOrchid"
-                          Value="MediumOrchid" />
-          <SupportedValue DisplayName="MediumPurple"
-                          Value="MediumPurple" />
-          <SupportedValue DisplayName="MediumSeaGreen"
-                          Value="MediumSeaGreen" />
-          <SupportedValue DisplayName="MediumSlateBlue"
-                          Value="MediumSlateBlue" />
-          <SupportedValue DisplayName="MediumSpringGreen"
-                          Value="MediumSpringGreen" />
-          <SupportedValue DisplayName="MediumTurquoise"
-                          Value="MediumTurquoise" />
-          <SupportedValue DisplayName="MediumVioletRed"
-                          Value="MediumVioletRed" />
-          <SupportedValue DisplayName="MidnightBlue"
-                          Value="MidnightBlue" />
-          <SupportedValue DisplayName="MintCream"
-                          Value="MintCream" />
-          <SupportedValue DisplayName="MistyRose"
-                          Value="MistyRose" />
-          <SupportedValue DisplayName="Moccasin"
-                          Value="Moccasin" />
-          <SupportedValue DisplayName="NavajoWhite"
-                          Value="NavajoWhite" />
-          <SupportedValue DisplayName="Navy"
-                          Value="Navy" />
-          <SupportedValue DisplayName="OldLace"
-                          Value="OldLace" />
-          <SupportedValue DisplayName="Olive"
-                          Value="Olive" />
-          <SupportedValue DisplayName="OliveDrab"
-                          Value="OliveDrab" />
-          <SupportedValue DisplayName="Orange"
-                          Value="Orange" />
-          <SupportedValue DisplayName="OrangeRed"
-                          Value="OrangeRed" />
-          <SupportedValue DisplayName="Orchid"
-                          Value="Orchid" />
-          <SupportedValue DisplayName="PaleGoldenrod"
-                          Value="PaleGoldenrod" />
-          <SupportedValue DisplayName="PaleGreen"
-                          Value="PaleGreen" />
-          <SupportedValue DisplayName="PaleTurquoise"
-                          Value="PaleTurquoise" />
-          <SupportedValue DisplayName="PaleVioletRed"
-                          Value="PaleVioletRed" />
-          <SupportedValue DisplayName="PapayaWhip"
-                          Value="PapayaWhip" />
-          <SupportedValue DisplayName="PeachPuff"
-                          Value="PeachPuff" />
-          <SupportedValue DisplayName="Peru"
-                          Value="Peru" />
-          <SupportedValue DisplayName="Pink"
-                          Value="Pink" />
-          <SupportedValue DisplayName="Plum"
-                          Value="Plum" />
-          <SupportedValue DisplayName="PowderBlue"
-                          Value="PowderBlue" />
-          <SupportedValue DisplayName="Purple"
-                          Value="Purple" />
-          <SupportedValue DisplayName="Red"
-                          Value="Red" />
-          <SupportedValue DisplayName="RosyBrown"
-                          Value="RosyBrown" />
-          <SupportedValue DisplayName="RoyalBlue"
-                          Value="RoyalBlue" />
-          <SupportedValue DisplayName="SaddleBrown"
-                          Value="SaddleBrown" />
-          <SupportedValue DisplayName="Salmon"
-                          Value="Salmon" />
-          <SupportedValue DisplayName="SandyBrown"
-                          Value="SandyBrown" />
-          <SupportedValue DisplayName="SeaGreen"
-                          Value="SeaGreen" />
-          <SupportedValue DisplayName="SeaShell"
-                          Value="SeaShell" />
-          <SupportedValue DisplayName="Sienna"
-                          Value="Sienna" />
-          <SupportedValue DisplayName="Silver"
-                          Value="Silver" />
-          <SupportedValue DisplayName="SkyBlue"
-                          Value="SkyBlue" />
-          <SupportedValue DisplayName="SlateBlue"
-                          Value="SlateBlue" />
-          <SupportedValue DisplayName="SlateGray"
-                          Value="SlateGray" />
-          <SupportedValue DisplayName="Snow"
-                          Value="Snow" />
-          <SupportedValue DisplayName="SpringGreen"
-                          Value="SpringGreen" />
-          <SupportedValue DisplayName="SteelBlue"
-                          Value="SteelBlue" />
-          <SupportedValue DisplayName="Tan"
-                          Value="Tan" />
-          <SupportedValue DisplayName="Teal"
-                          Value="Teal" />
-          <SupportedValue DisplayName="Thistle"
-                          Value="Thistle" />
-          <SupportedValue DisplayName="Tomato"
-                          Value="Tomato" />
-          <SupportedValue DisplayName="Transparent"
-                          Value="Transparent" />
-          <SupportedValue DisplayName="Turquoise"
-                          Value="Turquoise" />
-          <SupportedValue DisplayName="Violet"
-                          Value="Violet" />
-          <SupportedValue DisplayName="Wheat"
-                          Value="Wheat" />
-          <SupportedValue DisplayName="White"
-                          Value="White" />
-          <SupportedValue DisplayName="WhiteSmoke"
-                          Value="WhiteSmoke" />
-          <SupportedValue DisplayName="Yellow"
-                          Value="Yellow" />
-          <SupportedValue DisplayName="YellowGreen"
-                          Value="YellowGreen" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":String"
-                                Value="Black"/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
@@ -371,7 +33,7 @@
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Bold" />
-          <Description Value="Set whether the label should use a bold font or not" />
+          <Description Value="Set whether the textbox should use a bold font or not" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
@@ -387,7 +49,7 @@
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Italic" />
-          <Description Value="Set whether the label should use a italic font or not" />
+          <Description Value="Set whether the textbox should use a italic font or not" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
@@ -396,14 +58,33 @@
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
-      <!-- *** BorderColour *** -->
-      <ControlProperty Name="BorderColour"
+      <!-- *** StylableBorderColour *** -->
+      <ControlProperty Name="StylableFontColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Font colour (currently only black)" />
+          <Description Value="Enter the colour for the textbox font" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Black"
+                          Value="Black" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** StylableBorderColour *** -->
+      <ControlProperty Name="StylableBorderColour"
                        PropertyType=":String"
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Border colour" />
-          <Description Value="Enter the colour for the label border" />
+          <Description Value="Enter the colour for the textbox border" />
           <SupportedValuesExclusive />
           <SupportedValue DisplayName="AliceBlue"
                           Value="AliceBlue" />
@@ -695,30 +376,14 @@
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
-      <!-- *** BorderThickness *** -->
-      <ControlProperty Name="BorderThickness"
-                       PropertyType=":Int32"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Border thickness" />
-          <Description Value="Enter the thickness of the image border (zero for no border)" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Int32"
-                                Value="0"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** ShadowColour *** -->
-      <ControlProperty Name="ShadowColour"
+      <!-- *** StylableBackgroundColour *** -->
+      <ControlProperty Name="StylableBackgroundColour"
                        PropertyType=":String"
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
-          <DisplayName Value="Drop shadow colour" />
-          <Description Value="Enter the colour for the drop shadow" />
+          <DisplayName Value="Background colour" />
+          <Description Value="Enter the colour for the textbox background" />
           <SupportedValuesExclusive />
           <SupportedValue DisplayName="AliceBlue"
                           Value="AliceBlue" />
@@ -1007,70 +672,6 @@
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
                                 Value="Black"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** ShadowDirection *** -->
-      <ControlProperty Name="ShadowDirection"
-                       PropertyType=":Int32"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Drop shadow direction (0-359)" />
-          <Description Value="Enter the direction for the drop shadow (must be between 0 and 359)" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Int32"
-                                Value="320"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** ShadowDepth *** -->
-      <ControlProperty Name="ShadowDepth"
-                       PropertyType=":Int32"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Drop shadow depth" />
-          <Description Value="Enter the depth of the drop shadow" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Int32"
-                                Value="10"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** ShadowBlurRadius *** -->
-      <ControlProperty Name="ShadowBlurRadius"
-                       PropertyType=":Int32"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Drop shadow radius" />
-          <Description Value="Enter the blur radius of the drop shadow" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Int32"
-                                Value="10"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- *** ShadowOpacity *** -->
-      <ControlProperty Name="ShadowOpacity"
-                       PropertyType=":Double"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Drop shadow opacity" />
-          <Description Value="Enter the opacity of the drop shadow (0-1, where 0 is invisible, and 1 is solid)" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Double"
-                                Value="0"/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
