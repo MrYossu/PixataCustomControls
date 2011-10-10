@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="WebLink"
+           SupportedContentItemKind="Value"
+           DesignerImageResource="PixataCustomControls.WebLink::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Web Link" />
+    </Control.Attributes>
+    <Control.Properties>
+      <!-- *** UrlVisible *** -->
+      <ControlProperty Name="UrlVisible"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show URL?" />
+          <Description Value="Set whether the URL should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+    </Control.Properties>
+    <Control.PropertyOverrides>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[Image]"
+        EditorVisibility="PropertySheet"/>
+    </Control.PropertyOverrides>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+      <SupportedDataType DataType=":Boolean"/>
+      <SupportedDataType DataType=":Byte"/>
+      <SupportedDataType DataType=":DateTime"/>
+      <SupportedDataType DataType=":Decimal"/>
+      <SupportedDataType DataType=":Double"/>
+      <SupportedDataType DataType=":Guid"/>
+      <SupportedDataType DataType=":Int16"/>
+      <SupportedDataType DataType=":Int32"/>
+      <SupportedDataType DataType=":Int64"/>
+      <SupportedDataType DataType=":SByte"/>
+      <SupportedDataType DataType=":Single"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>

@@ -74,7 +74,9 @@
   <ItemGroup>
     <Compile Include="Presentation\Controls\BooleanToBoldVC.cs" />
     <Compile Include="Presentation\Controls\BooleanToItalicVC.cs" />
+    <Compile Include="Presentation\Controls\BoolToVisibilityVC.cs" />
     <Compile Include="Presentation\Controls\ColourUtils.cs" />
+    <Compile Include="Presentation\Controls\EmptyStringToVisibilityVC.cs" />
     <Compile Include="Presentation\Controls\HorizontalDivider.xaml.cs">
       <DependentUpon>HorizontalDivider.xaml</DependentUpon>
     </Compile>
@@ -82,6 +84,7 @@
     <Compile Include="Presentation\Controls\LabelledGroup.xaml.cs">
       <DependentUpon>LabelledGroup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Controls\LimitStringLengthVC.cs" />
     <Compile Include="Presentation\Controls\Spacer.xaml.cs">
       <DependentUpon>Spacer.xaml</DependentUpon>
     </Compile>
@@ -97,8 +100,12 @@
     <Compile Include="Presentation\Controls\StylableTextBox.xaml.cs">
       <DependentUpon>StylableTextBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Controls\UrlValidatorVC.cs" />
     <Compile Include="Presentation\Controls\VerticalDivider.xaml.cs">
       <DependentUpon>VerticalDivider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\WebLink.xaml.cs">
+      <DependentUpon>WebLink.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Presentation\Controls\VerticalDivider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\WebLink.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

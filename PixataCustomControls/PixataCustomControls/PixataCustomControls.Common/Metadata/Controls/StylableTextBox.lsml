@@ -671,7 +671,23 @@
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
-                                Value="Black"/>
+                                Value="White"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <!-- *** AcceptsReturn *** -->
+      <ControlProperty Name="AcceptsReturn"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Multiline" />
+          <Description Value="Set whether the textbox allows you to enter multiple lines of text" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="False"/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>

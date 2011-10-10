@@ -1,0 +1,23 @@
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.WebLink"
+             xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Loaded="UserControl_Loaded">
+  <UserControl.Resources>
+    <vc:UrlValidatorVC x:Key="UrlValidatorVC" />
+    <vc:BoolToVisibilityVC x:Key="BoolToVisibilityVC" />
+    <vc:EmptyStringToVisibilityVC x:Key="EmptyStringToVisibilityVC" />
+  </UserControl.Resources>
+  <HyperlinkButton NavigateUri="{Binding Value, Mode=TwoWay, Converter={StaticResource UrlValidatorVC}}"
+                   TargetName="_blank">
+    <StackPanel Orientation="Horizontal">
+      <Image x:Name="WebLinkImage"
+             VerticalAlignment="Center"
+             Visibility="{Binding Value, Converter={StaticResource EmptyStringToVisibilityVC}}"
+             Margin="0,0,5,0" />
+      <TextBlock Text="{Binding StringValue}"
+                 Visibility="{Binding Properties[PixataCustomControls:WebLink/UrlVisible], Converter={StaticResource BoolToVisibilityVC}}"
+                 VerticalAlignment="Center" />
+    </StackPanel>
+  </HyperlinkButton>
+</UserControl>
