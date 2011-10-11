@@ -6,7 +6,7 @@
   <Identifier Id="PixataCustomControls">
     <Name>Pixata custom controls for Lightswitch</Name>
     <Author>Alan Silver, Pixata Ltd</Author>
-    <Version>1.6</Version>
+    <Version>1.7</Version>
     <Description xml:space="preserve">A collection of (hopefully) useful controls by Alan Silver (Mr Yossu), including a static image viewer, labelled group, web link, stylable textbox, stylable label, stylable static label, spacer, and horizontal and vertical dividers</Description>
     <Locale>1033</Locale>
     <MoreInfoUrl>http://dotnetwhatnot.pixata.co.uk/</MoreInfoUrl>
