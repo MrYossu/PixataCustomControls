@@ -18,6 +18,7 @@
     </Border.Effect>
     <TextBlock x:Name="TheStylableLabel"
                Text="{Binding Value, Mode=TwoWay}"
+               TextWrapping="Wrap"
                HorizontalAlignment="{Binding Properties[PixataCustomControls:StylableLabel/StylableAlignment]}"
                Foreground="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontColour]}"
                FontSize="{Binding Properties[PixataCustomControls:StylableLabel/StylableFontSize]}"
