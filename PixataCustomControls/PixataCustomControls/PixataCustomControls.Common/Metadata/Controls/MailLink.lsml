@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="MailLink"
+           SupportedContentItemKind="Value"
+           DesignerImageResource="PixataCustomControls.MailLink::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Mail Link" />
+    </Control.Attributes>
+    <Control.Properties>
+      <!-- *** AddressVisible *** -->
+      <ControlProperty Name="AddressVisible"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show e-mail address?" />
+          <Description Value="Set whether the e-mail address should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+    </Control.Properties>
+    <Control.PropertyOverrides>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[Image]"
+        EditorVisibility="PropertySheet"/>
+    </Control.PropertyOverrides>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>

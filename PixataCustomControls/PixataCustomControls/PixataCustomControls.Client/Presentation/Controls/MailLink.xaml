@@ -1,21 +1,22 @@
-<UserControl x:Class="PixataCustomControls.Presentation.Controls.WebLink"
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.MailLink"
              xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Loaded="UserControl_Loaded">
   <UserControl.Resources>
-    <vc:UrlValidatorVC x:Key="UrlValidatorVC" />
+    <vc:MailValidatorVC x:Key="MailValidatorVC" />
     <vc:BoolToVisibilityVC x:Key="BoolToVisibilityVC" />
   </UserControl.Resources>
-  <HyperlinkButton NavigateUri="{Binding Value, Mode=TwoWay, Converter={StaticResource UrlValidatorVC}}"
+  <HyperlinkButton NavigateUri="{Binding Value, Mode=TwoWay, Converter={StaticResource MailValidatorVC}}"
                    TargetName="_blank">
     <StackPanel Orientation="Horizontal">
-      <Image x:Name="WebLinkImage"
+      <Image x:Name="MailLinkImage"
              VerticalAlignment="Center"
              Margin="0,0,5,0" />
       <TextBlock Text="{Binding StringValue}"
-                 Visibility="{Binding Properties[PixataCustomControls:WebLink/UrlVisible], Converter={StaticResource BoolToVisibilityVC}}"
+                 Visibility="{Binding Properties[PixataCustomControls:MailLink/AddressVisible], Converter={StaticResource BoolToVisibilityVC}}"
                  VerticalAlignment="Center" />
     </StackPanel>
   </HyperlinkButton>
+
 </UserControl>

@@ -8,8 +8,8 @@ using Microsoft.LightSwitch.Presentation;
 using Microsoft.LightSwitch.Presentation.Framework.Helpers;
 
 namespace PixataCustomControls.Presentation.Controls {
-  public partial class WebLink : UserControl {
-    public WebLink() {
+  public partial class MailLink : UserControl {
+    public MailLink() {
       InitializeComponent();
     }
 
@@ -17,23 +17,23 @@ namespace PixataCustomControls.Presentation.Controls {
       IContentItem contentItem = (IContentItem)DataContext;
       ImageSource imgSource = ImagePropertyHelper.GetImageSource(contentItem);
       if (imgSource != null) {
-        WebLinkImage.Source = imgSource;
-        WebLinkImage.Visibility = Visibility.Visible;
+        MailLinkImage.Source = imgSource;
+        MailLinkImage.Visibility = Visibility.Visible;
       } else {
-        WebLinkImage.Visibility = Visibility.Collapsed;
+        MailLinkImage.Visibility = Visibility.Collapsed;
       }
     }
   }
 
   [Export(typeof(IControlFactory))]
-  [ControlFactory("PixataCustomControls:WebLink")]
-  internal class WebLinkFactory : IControlFactory {
+  [ControlFactory("PixataCustomControls:MailLink")]
+  internal class MailLinkFactory : IControlFactory {
     #region IControlFactory Members
 
     public DataTemplate DataTemplate {
       get {
         if (null == this.dataTemplate) {
-          this.dataTemplate = XamlReader.Load(WebLinkFactory.ControlTemplate) as DataTemplate;
+          this.dataTemplate = XamlReader.Load(MailLinkFactory.ControlTemplate) as DataTemplate;
         }
         return this.dataTemplate;
       }
@@ -54,12 +54,12 @@ namespace PixataCustomControls.Presentation.Controls {
     #region Constants
 
     private const string ControlTemplate =
-      "<DataTemplate" +
-      " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
-      " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
-      " xmlns:ctl=\"clr-namespace:PixataCustomControls.Presentation.Controls;assembly=PixataCustomControls.Client\">" +
-      "<ctl:WebLink/>" +
-      "</DataTemplate>";
+        "<DataTemplate" +
+        " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
+        " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
+        " xmlns:ctl=\"clr-namespace:PixataCustomControls.Presentation.Controls;assembly=PixataCustomControls.Client\">" +
+        "<ctl:MailLink/>" +
+        "</DataTemplate>";
 
     #endregion
   }
