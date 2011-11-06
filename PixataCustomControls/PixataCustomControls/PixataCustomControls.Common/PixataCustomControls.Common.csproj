@@ -105,7 +105,9 @@
     <EmbeddedResource Include="Metadata\Controls\VerticalDivider.lsml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Metadata\Controls\StylableTextBox.lsml" />
+    <EmbeddedResource Include="Metadata\Controls\StylableTextBox.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\WebLink.lsml" />
