@@ -9,6 +9,7 @@
   <TextBox x:Name="TheStylableTextBox"
            Text="{Binding StringValue, Mode=TwoWay}"
            Background="{Binding Properties[PixataCustomControls:StylableTextBox/StylableBackgroundColour]}"
+           Foreground="{Binding Properties[PixataCustomControls:StylableTextBox/StylableForegroundColour]}"
            BorderBrush="{Binding Properties[PixataCustomControls:StylableTextBox/StylableBorderColour]}"
            FontSize="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontSize]}"
            FontWeight="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"

@@ -8,7 +8,8 @@
     <vc:IntToBorderVC x:Key="IntToBorderVC" />
   </UserControl.Resources>
   <Border BorderBrush="{Binding Properties[PixataCustomControls:StylableStaticLabel/BorderColour]}"
-          BorderThickness="{Binding Properties[PixataCustomControls:StylableStaticLabel/BorderThickness], Converter={StaticResource IntToBorderVC}}">
+          BorderThickness="{Binding Properties[PixataCustomControls:StylableStaticLabel/BorderThickness], Converter={StaticResource IntToBorderVC}}"
+          Background="{Binding Properties[PixataCustomControls:StylableStaticLabel/StylableBackgroundColour]}">
     <Border.Effect>
       <DropShadowEffect Color="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowColour]}"
                         Direction="{Binding Properties[PixataCustomControls:StylableStaticLabel/ShadowDirection]}"
