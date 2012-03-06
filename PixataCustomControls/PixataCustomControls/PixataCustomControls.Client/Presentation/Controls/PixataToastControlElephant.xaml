@@ -9,7 +9,7 @@
                            d:DesignWidth="300">
 
   <Grid x:Name="LayoutRoot"
-        Background="White">
+        Background="Black">
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="Auto" />
       <ColumnDefinition Width="*" />
@@ -34,6 +34,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Name="TbTitle"
                    Text="The Title"
+                   Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    TextWrapping="Wrap"
@@ -66,6 +67,7 @@
       <!-- Message area -->
       <TextBlock Name="TbMessage"
                  Text="The Content"
+                 Foreground="White"
                  Grid.Row="2"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
