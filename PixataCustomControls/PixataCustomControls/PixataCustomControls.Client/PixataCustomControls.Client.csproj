@@ -88,13 +88,25 @@
       <DependentUpon>MailLink.xaml</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Controls\MailValidatorVC.cs" />
+    <Compile Include="Presentation\Controls\PixataToastControlAlert.xaml.cs">
+      <DependentUpon>PixataToastControlAlert.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Controls\PixataToastControlBase.cs" />
+    <Compile Include="Presentation\Controls\PixataToastControlErrorRed.xaml.cs">
+      <DependentUpon>PixataToastControlErrorRed.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Controls\PixataToastControlInfoBlue.xaml.cs">
       <DependentUpon>PixataToastControlInfoBlue.xaml</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Controls\PixataToastControlInterface.cs" />
     <Compile Include="Presentation\Controls\PixataToastControlPlain.xaml.cs">
       <DependentUpon>PixataToastControlPlain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\PixataToastControlElephant.xaml.cs">
+      <DependentUpon>PixataToastControlElephant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\PixataToastControlWarningYellow.xaml.cs">
+      <DependentUpon>PixataToastControlWarningYellow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Controls\PixataToastHelper.cs" />
     <Compile Include="Presentation\Controls\Spacer.xaml.cs">
@@ -134,11 +146,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Presentation\Controls\PixataToastControlAlert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\PixataToastControlErrorRed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Presentation\Controls\PixataToastControlInfoBlue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Presentation\Controls\PixataToastControlPlain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\PixataToastControlElephant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\PixataToastControlWarningYellow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +204,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\closebutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\symbol_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\symbol_exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\symbol_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\elephant.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

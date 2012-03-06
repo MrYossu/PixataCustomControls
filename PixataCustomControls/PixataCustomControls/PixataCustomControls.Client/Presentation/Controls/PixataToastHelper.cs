@@ -47,8 +47,20 @@ namespace PixataCustomControls.Presentation.Controls {
     private static FrameworkElement GetToastControl(string TitleText, string MessageText, PixataToastStyles ToastStyle) {
       PixataToastControlInterface c;
       switch (ToastStyle) {
-        case PixataToastStyles.InfoBlue:
+        case PixataToastStyles.Info:
           c = new PixataToastControlInfoBlue();
+          break;
+        case PixataToastStyles.Warning:
+          c = new PixataToastControlWarningYellow();
+          break;
+        case PixataToastStyles.Alert:
+          c = new PixataToastControlAlert();
+          break;
+        case PixataToastStyles.Error:
+          c = new PixataToastControlErrorRed();
+          break;
+        case PixataToastStyles.Elephant:
+          c = new PixataToastControlElephant();
           break;
         default:
           c = new PixataToastControlPlain();
@@ -60,8 +72,12 @@ namespace PixataCustomControls.Presentation.Controls {
     }
 
     public enum PixataToastStyles {
-      Plain,
-      InfoBlue
+      Plain, // no icon
+      Info, // blue circle "i"
+      Warning, // yellow triangle
+      Alert, // bell
+      Error, //red circle "!"
+      Elephant // elephant (just don't ask!)
     }
   }
 }

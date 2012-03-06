@@ -1,4 +1,4 @@
-﻿<uc:PixataToastControlBase x:Class="PixataCustomControls.Presentation.Controls.PixataToastControlInfoBlue"
+﻿<uc:PixataToastControlBase x:Class="PixataCustomControls.Presentation.Controls.PixataToastControlWarningYellow"
                            xmlns:uc="clr-namespace:PixataCustomControls.Presentation.Controls"
                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -64,7 +64,7 @@
            Margin="15,5"
            VerticalAlignment="Center"
            HorizontalAlignment="Center"
-           Source="/PixataCustomControls.Client;component/Images/symbol_information.png" />
+           Source="/PixataCustomControls.Client;component/Images/symbol_exclamation.png" />
     <TextBlock Name="TbTitle"
                Text="The Title"
                Grid.Row="2"
@@ -74,7 +74,7 @@
                TextWrapping="Wrap"
                FontSize="16"
                FontWeight="Bold"
-               Foreground="#FF3E6DC0"
+               Foreground="#FFFFC641"
                FontFamily="Trebuchet MS" />
     <TextBlock Name="TbMessage"
                Text="The Content"
