@@ -88,6 +88,15 @@
       <DependentUpon>MailLink.xaml</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Controls\MailValidatorVC.cs" />
+    <Compile Include="Presentation\Controls\PixataToastControlBase.cs" />
+    <Compile Include="Presentation\Controls\PixataToastControlInfoBlue.xaml.cs">
+      <DependentUpon>PixataToastControlInfoBlue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\PixataToastControlInterface.cs" />
+    <Compile Include="Presentation\Controls\PixataToastControlPlain.xaml.cs">
+      <DependentUpon>PixataToastControlPlain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\PixataToastHelper.cs" />
     <Compile Include="Presentation\Controls\Spacer.xaml.cs">
       <DependentUpon>Spacer.xaml</DependentUpon>
     </Compile>
@@ -125,6 +134,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Presentation\Controls\PixataToastControlInfoBlue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\PixataToastControlPlain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Presentation\Controls\Spacer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,6 +170,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\closebutton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

@@ -1,0 +1,83 @@
+﻿<uc:PixataToastControlBase x:Class="PixataCustomControls.Presentation.Controls.PixataToastControlInfoBlue"
+                           xmlns:uc="clr-namespace:PixataCustomControls.Presentation.Controls"
+                           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                           Height="100"
+                           Width="350">
+
+  <Grid x:Name="LayoutRoot"
+        Background="White">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Rectangle Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Fill="#FF006AB3"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch" />
+    <Grid Grid.Row="1"
+          Grid.Column="0"
+          Grid.ColumnSpan="2"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Stretch">
+      <Grid.Background>
+        <LinearGradientBrush EndPoint="0.5,1"
+                             StartPoint="0.5,0">
+          <GradientStop Color="#FFE3EFF7"
+                        Offset="0" />
+          <GradientStop Color="#FFD6E7F3"
+                        Offset="1" />
+        </LinearGradientBrush>
+      </Grid.Background>
+      <Button VerticalAlignment="Center"
+              HorizontalAlignment="Right"
+              Margin="3,2"
+              Width="14"
+              Height="14"
+              Padding="0"
+              Click="Button_Click">
+        <Button.Content>
+          <Image Source="/PixataCustomControls.Client;component/Images/closebutton.png"
+                 Width="14"
+                 Height="14"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center" />
+        </Button.Content>
+      </Button>
+    </Grid>
+    <Image Grid.Row="2"
+           Grid.Column="0"
+           Width="20"
+           Height="22"
+           Margin="5"
+           VerticalAlignment="Center"
+           HorizontalAlignment="Center"
+           Source="/PixataCustomControls.Client;component/Images/info.png" />
+    <TextBlock Name="TbTitle"
+               Grid.Row="2"
+               Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               TextWrapping="Wrap"
+               FontSize="16"
+               FontWeight="Bold"
+               Foreground="#FF3E6DC0"
+               FontFamily="Trebuchet MS" />
+    <TextBlock Name="TbMessage"
+               Grid.Row="3"
+               Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               TextWrapping="Wrap" />
+  </Grid>
+</uc:PixataToastControlBase>
