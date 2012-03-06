@@ -11,8 +11,8 @@
     <Locale>1033</Locale>
     <MoreInfoUrl>http://dotnetwhatnot.pixata.co.uk/</MoreInfoUrl>
     <GettingStartedGuide>http://visualstudiogallery.msdn.microsoft.com/9c342bec-e3e5-4c08-9993-35ccb26d3c9f</GettingStartedGuide>
-    <Icon>ControlsLogo.ico</Icon>
-    <PreviewImage>ControlsLogo.ico</PreviewImage>
+    <Icon>ControlsLogo1.10.ico</Icon>
+    <PreviewImage>ControlsLogo1.10.ico</PreviewImage>
     <SupportedProducts>
       <VisualStudio Version="10.0">
         <Edition>VSLS</Edition>
