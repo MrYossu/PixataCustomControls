@@ -387,8 +387,10 @@
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Background colour" />
-          <Description Value="Enter the colour for the textbox background" />
+          <Description Value="Enter the colour for the label background" />
           <SupportedValuesExclusive />
+          <SupportedValue DisplayName="none"
+                          Value="" />
           <SupportedValue DisplayName="AliceBlue"
                           Value="AliceBlue" />
           <SupportedValue DisplayName="AntiqueWhite"
@@ -675,7 +677,7 @@
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
-                                Value="White"/>
+                                Value=""/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>

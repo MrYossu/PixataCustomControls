@@ -84,7 +84,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Metadata\Controls\StylableLabel.lsml" />
+    <EmbeddedResource Include="Metadata\Controls\StylableLabel.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\StylableStaticLabel.lsml" />
