@@ -54,6 +54,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editors\DisplayNameConverter.cs" />
+    <Compile Include="Editors\OpacityPicker.xaml.cs">
+      <DependentUpon>OpacityPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\OpacityPickerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\HorizontalDividerImageProvider.cs" />
     <Compile Include="Resources\LabelledGroupImageProvider.cs" />
@@ -95,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\MailLink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Editors\OpacityPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

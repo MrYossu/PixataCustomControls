@@ -1111,6 +1111,7 @@
       <ControlProperty Name="ShadowOpacity"
                        PropertyType=":Double"
                        CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:OpacityPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Drop shadow opacity" />
