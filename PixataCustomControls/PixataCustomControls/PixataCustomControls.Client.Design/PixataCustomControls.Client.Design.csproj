@@ -82,6 +82,7 @@
     <Compile Include="Resources\MailLinkImageProvider.cs" />
     <Compile Include="Resources\SpacerImageProvider.cs" />
     <Compile Include="Resources\StaticImageViewerImageProvider.cs" />
+    <Compile Include="Resources\StaticToolbarImageProvider.cs" />
     <Compile Include="Resources\StylableLabelImageProvider.cs" />
     <Compile Include="Resources\StylableStaticLabelImageProvider.cs" />
     <Compile Include="Resources\StylableTextBoxImageProvider.cs" />
@@ -123,6 +124,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\StaticToolbar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

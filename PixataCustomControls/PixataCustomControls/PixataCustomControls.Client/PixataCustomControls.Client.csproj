@@ -49,6 +49,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.LightSwitch.ExportProvider">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\LightSwitch\1.0\Client\Microsoft.LightSwitch.ExportProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.LightSwitch.SDKProxy">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\LightSwitch\1.0\Client\Microsoft.LightSwitch.SDKProxy.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -115,6 +122,10 @@
     <Compile Include="Presentation\Controls\StaticImageViewer.xaml.cs">
       <DependentUpon>StaticImageViewer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Controls\StaticToolbar.xaml.cs">
+      <DependentUpon>StaticToolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\StaticToolbarEventArgs.cs" />
     <Compile Include="Presentation\Controls\StylableLabel.xaml.cs">
       <DependentUpon>StylableLabel.xaml</DependentUpon>
     </Compile>
@@ -175,6 +186,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Presentation\Controls\StaticImageViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\StaticToolbar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -117,6 +117,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\MailLink.lsml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\StaticToolbar.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

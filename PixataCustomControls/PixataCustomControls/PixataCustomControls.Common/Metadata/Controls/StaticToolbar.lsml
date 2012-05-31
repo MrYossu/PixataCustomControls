@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="StaticToolbar"
+           SupportedContentItemKind="Value"
+           DesignerImageResource="PixataCustomControls.StaticToolbar::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Static Toolbar" />
+    </Control.Attributes>
+
+    <Control.Properties>
+      <!-- *** General *** -->
+      <ControlProperty Name="ImageWidth"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Button width" />
+          <Description Value="Set the width of the image for each visible button (ignore if not using images)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="ImageHeight"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Button height" />
+          <Description Value="Set the height of the image for each visible button (ignore if not using images)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Margin"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Button margin" />
+          <Description Value="The margin to be used for all buttons (format l,t,r,b)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** Button 1 *** -->
+      <ControlProperty Name="Visible1"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show button 1?" />
+          <Description Value="Set whether button 1 should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Image1"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #1" />
+          <Description Value="Image number one" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="Text1"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text #1" />
+          <Description Value="Text for button number one" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip1"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #1" />
+          <Description Value="Text for the tool tip for button number one" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="TagText1"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tag text #1" />
+          <Description Value="Text for the tag for button number 1 (gets sent in the event args when the button is clicked)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** Button 2 *** -->
+      <ControlProperty Name="Visible2"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show button 2?" />
+          <Description Value="Set whether button 2 should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Image2"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #2" />
+          <Description Value="Image number 2" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="Text2"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text #2" />
+          <Description Value="Text for button number 2" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip2"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #2" />
+          <Description Value="Text for the tool tip for button number 2" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="TagText2"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tag text #2" />
+          <Description Value="Text for the tag for button number 2 (gets sent in the event args when the button is clicked)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** Button 3 *** -->
+      <ControlProperty Name="Visible3"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show button 3?" />
+          <Description Value="Set whether button 3 should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Image3"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #3" />
+          <Description Value="Image number 3" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="Text3"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text #3" />
+          <Description Value="Text for button number 3" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip3"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #3" />
+          <Description Value="Text for the tool tip for button number 3" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="TagText3"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tag text #3" />
+          <Description Value="Text for the tag for button number 3 (gets sent in the event args when the button is clicked)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** Button 4 *** -->
+      <ControlProperty Name="Visible4"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show button 4?" />
+          <Description Value="Set whether button 4 should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Image4"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #4" />
+          <Description Value="Image number 4" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="Text4"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text #4" />
+          <Description Value="Text for button number 4" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip4"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #4" />
+          <Description Value="Text for the tool tip for button number 4" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="TagText4"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tag text #4" />
+          <Description Value="Text for the tag for button number 4 (gets sent in the event args when the button is clicked)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** Button 5 *** -->
+      <ControlProperty Name="Visible5"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Show button 5?" />
+          <Description Value="Set whether button 5 should be displayed or not" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Boolean"
+                                Value="True"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Image5"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #5" />
+          <Description Value="Image number 5" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="Text5"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text #5" />
+          <Description Value="Text for button number 5" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip5"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #5" />
+          <Description Value="Text for the tool tip for button number 5" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="TagText5"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tag text #5" />
+          <Description Value="Text for the tag for button number 5 (gets sent in the event args when the button is clicked)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+    </Control.Properties>
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+      <SupportedDataType DataType=":Boolean"/>
+      <SupportedDataType DataType=":Byte"/>
+      <SupportedDataType DataType=":DateTime"/>
+      <SupportedDataType DataType=":Decimal"/>
+      <SupportedDataType DataType=":Double"/>
+      <SupportedDataType DataType=":Guid"/>
+      <SupportedDataType DataType=":Int16"/>
+      <SupportedDataType DataType=":Int32"/>
+      <SupportedDataType DataType=":Int64"/>
+      <SupportedDataType DataType=":SByte"/>
+      <SupportedDataType DataType=":Single"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>

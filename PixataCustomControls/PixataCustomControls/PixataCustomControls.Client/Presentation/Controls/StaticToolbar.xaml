@@ -1,0 +1,109 @@
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.StaticToolbar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls"
+             Margin="0"
+             Loaded="UserControl_Loaded">
+  <UserControl.Resources>
+    <vc:BoolToVisibilityVC x:Key="BoolToVisibilityVC" />
+  </UserControl.Resources>
+
+  <StackPanel Orientation="Horizontal"
+              Margin="0">
+    <!-- *** Button 1 *** -->
+    <Button x:Name="Button1"
+            Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible1], Converter={StaticResource BoolToVisibilityVC}}"
+            Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
+            Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText1]}"
+            Click="Button_Click">
+      <StackPanel Orientation="Horizontal">
+        <Image x:Name="Image1"
+               Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
+               Height="{Binding Properties[PixataCustomControls:StaticToolbar/ImageHeight]}" />
+        <TextBlock x:Name="Text1"
+                   VerticalAlignment="Center"
+                   Text="{Binding Properties[PixataCustomControls:StaticToolbar/Text1]}" />
+        <ToolTipService.ToolTip>
+          <ToolTip Content="{Binding Properties[PixataCustomControls:StaticToolbar/ToolTip1]}" />
+        </ToolTipService.ToolTip>
+      </StackPanel>
+    </Button>
+
+    <!-- *** Button 2 *** -->
+    <Button x:Name="Button2"
+            Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible2], Converter={StaticResource BoolToVisibilityVC}}"
+            Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
+            Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText2]}"
+            Click="Button_Click">
+      <StackPanel Orientation="Horizontal">
+        <Image x:Name="Image2"
+               Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
+               Height="{Binding Properties[PixataCustomControls:StaticToolbar/ImageHeight]}" />
+        <TextBlock x:Name="Text2"
+                   VerticalAlignment="Center"
+                   Text="{Binding Properties[PixataCustomControls:StaticToolbar/Text2]}" />
+        <ToolTipService.ToolTip>
+          <ToolTip Content="{Binding Properties[PixataCustomControls:StaticToolbar/ToolTip2]}" />
+        </ToolTipService.ToolTip>
+      </StackPanel>
+    </Button>
+
+    <!-- *** Button 3 *** -->
+    <Button x:Name="Button3"
+            Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible3], Converter={StaticResource BoolToVisibilityVC}}"
+            Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
+            Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText3]}"
+            Click="Button_Click">
+      <StackPanel Orientation="Horizontal">
+        <Image x:Name="Image3"
+               Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
+               Height="{Binding Properties[PixataCustomControls:StaticToolbar/ImageHeight]}" />
+        <TextBlock x:Name="Text3"
+                   VerticalAlignment="Center"
+                   Text="{Binding Properties[PixataCustomControls:StaticToolbar/Text3]}" />
+        <ToolTipService.ToolTip>
+          <ToolTip Content="{Binding Properties[PixataCustomControls:StaticToolbar/ToolTip3]}" />
+        </ToolTipService.ToolTip>
+      </StackPanel>
+    </Button>
+
+    <!-- *** Button 4 *** -->
+    <Button x:Name="Button4"
+            Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible4], Converter={StaticResource BoolToVisibilityVC}}"
+            Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
+            Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText4]}"
+            Click="Button_Click">
+      <StackPanel Orientation="Horizontal">
+        <Image x:Name="Image4"
+               Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
+               Height="{Binding Properties[PixataCustomControls:StaticToolbar/ImageHeight]}" />
+        <TextBlock x:Name="Text4"
+                   VerticalAlignment="Center"
+                   Text="{Binding Properties[PixataCustomControls:StaticToolbar/Text4]}" />
+        <ToolTipService.ToolTip>
+          <ToolTip Content="{Binding Properties[PixataCustomControls:StaticToolbar/ToolTip4]}" />
+        </ToolTipService.ToolTip>
+      </StackPanel>
+    </Button>
+
+    <!-- *** Button 5 *** -->
+    <Button x:Name="Button5"
+            Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible5], Converter={StaticResource BoolToVisibilityVC}}"
+            Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
+            Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText5]}"
+            Click="Button_Click">
+      <StackPanel Orientation="Horizontal">
+        <Image x:Name="Image5"
+               Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
+               Height="{Binding Properties[PixataCustomControls:StaticToolbar/ImageHeight]}" />
+        <TextBlock x:Name="Text5"
+                   VerticalAlignment="Center"
+                   Text="{Binding Properties[PixataCustomControls:StaticToolbar/Text5]}" />
+        <ToolTipService.ToolTip>
+          <ToolTip Content="{Binding Properties[PixataCustomControls:StaticToolbar/ToolTip5]}" />
+        </ToolTipService.ToolTip>
+      </StackPanel>
+    </Button>
+
+  </StackPanel>
+</UserControl>
