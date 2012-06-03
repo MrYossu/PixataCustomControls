@@ -15,15 +15,8 @@ namespace PixataCustomControls.Presentation.Controls {
       InitializeComponent();
     }
 
-    private readonly Button[] _buttons = new Button[5];
-
     private void UserControl_Loaded(object Sender, RoutedEventArgs E) {
       IContentItem contentItem = (IContentItem)DataContext;
-      _buttons[0] = Button1;
-      _buttons[1] = Button2;
-      _buttons[2] = Button3;
-      _buttons[3] = Button4;
-      _buttons[4] = Button5;
       SetImage(contentItem, Image1, "Image1");
       SetImage(contentItem, Image2, "Image2");
       SetImage(contentItem, Image3, "Image3");
@@ -43,14 +36,24 @@ namespace PixataCustomControls.Presentation.Controls {
       }
     }
 
-    private void Button_Click(object Sender, RoutedEventArgs E) {
-      string buttonName = ((Button)Sender).Name;
-      string buttonNumberStr = buttonName.Substring(6);
-      int buttonNumber = -1;
-      Int32.TryParse(buttonNumberStr, out buttonNumber);
-      if (buttonNumber >= 0 && buttonNumber <= 5) {
-        FireEvent(buttonNumber, _buttons[buttonNumber - 1].Tag.ToString());
-      }
+    private void Button_Click1(object Sender, RoutedEventArgs E) {
+      FireEvent(1, Button1.Tag.ToString());
+    }
+
+    private void Button_Click2(object Sender, RoutedEventArgs E) {
+      FireEvent(2, Button2.Tag.ToString());
+    }
+
+    private void Button_Click3(object Sender, RoutedEventArgs E) {
+      FireEvent(3, Button3.Tag.ToString());
+    }
+
+    private void Button_Click4(object Sender, RoutedEventArgs E) {
+      FireEvent(4, Button4.Tag.ToString());
+    }
+
+    private void Button_Click5(object Sender, RoutedEventArgs E) {
+      FireEvent(5, Button5.Tag.ToString());
     }
 
     public event EventHandler<StaticToolbarEventArgs> ButtonClick;
@@ -62,6 +65,25 @@ namespace PixataCustomControls.Presentation.Controls {
       };
       if (ButtonClick != null) {
         ButtonClick(this, ev);
+      }
+    }
+
+    public Button this[int ButtonNumber] {
+      get {
+        switch (ButtonNumber) {
+          case 1:
+            return Button1;
+          case 2:
+            return Button2;
+          case 3:
+            return Button3;
+          case 4:
+            return Button4;
+          case 5:
+            return Button5;
+          default:
+            throw new IndexOutOfRangeException("ButtonNumber must be between 1 and 5");
+        }
       }
     }
 

@@ -15,7 +15,7 @@
             Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible1], Converter={StaticResource BoolToVisibilityVC}}"
             Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
             Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText1]}"
-            Click="Button_Click">
+            Click="Button_Click1">
       <StackPanel Orientation="Horizontal">
         <Image x:Name="Image1"
                Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
@@ -34,7 +34,7 @@
             Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible2], Converter={StaticResource BoolToVisibilityVC}}"
             Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
             Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText2]}"
-            Click="Button_Click">
+            Click="Button_Click2">
       <StackPanel Orientation="Horizontal">
         <Image x:Name="Image2"
                Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
@@ -53,7 +53,7 @@
             Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible3], Converter={StaticResource BoolToVisibilityVC}}"
             Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
             Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText3]}"
-            Click="Button_Click">
+            Click="Button_Click3">
       <StackPanel Orientation="Horizontal">
         <Image x:Name="Image3"
                Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
@@ -72,7 +72,7 @@
             Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible4], Converter={StaticResource BoolToVisibilityVC}}"
             Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
             Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText4]}"
-            Click="Button_Click">
+            Click="Button_Click4">
       <StackPanel Orientation="Horizontal">
         <Image x:Name="Image4"
                Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"
@@ -91,7 +91,7 @@
             Visibility="{Binding Properties[PixataCustomControls:StaticToolbar/Visible5], Converter={StaticResource BoolToVisibilityVC}}"
             Margin="{Binding Properties[PixataCustomControls:StaticToolbar/Margin]}"
             Tag="{Binding Properties[PixataCustomControls:StaticToolbar/TagText5]}"
-            Click="Button_Click">
+            Click="Button_Click5">
       <StackPanel Orientation="Horizontal">
         <Image x:Name="Image5"
                Width="{Binding Properties[PixataCustomControls:StaticToolbar/ImageWidth]}"

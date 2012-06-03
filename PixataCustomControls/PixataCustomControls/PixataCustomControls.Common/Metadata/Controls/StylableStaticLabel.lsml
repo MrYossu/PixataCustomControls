@@ -4,6 +4,7 @@
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
   <Control Name="StylableStaticLabel"
+           AttachedLabelSupport="DisplayedByControl"
            SupportedContentItemKind="Value"
            DesignerImageResource="PixataCustomControls.StylableStaticLabel::ControlImage">
     <Control.Attributes>
