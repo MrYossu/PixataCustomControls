@@ -6,7 +6,6 @@
   <Control Name="HorizontalDivider"
            AttachedLabelSupport="DisplayedByControl"
            SupportedContentItemKind="Value"
-           AttachedLabelSupport="DisplayedByControl"
            DesignerImageResource="PixataCustomControls.HorizontalDivider::ControlImage">
     <Control.Attributes>
       <DisplayName Value="Pixata Horizontal Divider" />
