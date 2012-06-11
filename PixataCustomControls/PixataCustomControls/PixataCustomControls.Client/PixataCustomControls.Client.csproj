@@ -67,6 +67,7 @@
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.LightSwitch">
@@ -79,6 +80,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentation\Controls\ApplicationInformation.xaml.cs">
+      <DependentUpon>ApplicationInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Controls\BooleanToBoldVC.cs" />
     <Compile Include="Presentation\Controls\BooleanToItalicVC.cs" />
     <Compile Include="Presentation\Controls\BoolToVisibilityVC.cs" />
@@ -86,6 +90,7 @@
     <Compile Include="Presentation\Controls\HorizontalDivider.xaml.cs">
       <DependentUpon>HorizontalDivider.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Controls\InformationIndexToInformationValueVC.cs" />
     <Compile Include="Presentation\Controls\IntToBorderVC.cs" />
     <Compile Include="Presentation\Controls\LabelledGroup.xaml.cs">
       <DependentUpon>LabelledGroup.xaml</DependentUpon>
@@ -145,6 +150,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Presentation\Controls\ApplicationInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Presentation\Controls\HorizontalDivider.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -3,51 +3,51 @@
   xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-  <Control Name="Spacer"
+  <Control Name="ApplicationInformation"
            SupportedContentItemKind="Value"
-           AttachedLabelSupport="DisplayedByControl"
-           DesignerImageResource="PixataCustomControls.Spacer::ControlImage">
+           DesignerImageResource="PixataCustomControls.ApplicationInformation::ControlImage">
     <Control.Attributes>
-      <DisplayName Value="Pixata Spacer Control" />
+      <DisplayName Value="Pixata Application Information" />
     </Control.Attributes>
+
     <Control.Properties>
-      <!-- *** SpacerWidth *** -->
-      <ControlProperty Name="SpacerWidth"
-                       PropertyType=":Int32"
+      <ControlProperty Name="Information"
+                       PropertyType=":String"
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
-          <DisplayName Value="Width" />
-          <Description Value="Enter the amount of horizontal space you want" />
+          <DisplayName Value="Information to be displayed" />
+          <Description Value="Pick the application information to be displayed" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Version: major only (eg 1)"
+                          Value="0" />
+          <SupportedValue DisplayName="Version: major and minor (eg 1.2)"
+                          Value="1" />
+          <SupportedValue DisplayName="Version: major, minor and build (eg 1.2.3)"
+                          Value="2" />
+          <SupportedValue DisplayName="Name"
+                          Value="3" />
+          <SupportedValue DisplayName="Name &amp; version: major only (eg 1)"
+                          Value="4" />
+          <SupportedValue DisplayName="Name &amp; version: major and minor (eg 1.2)"
+                          Value="5" />
+          <SupportedValue DisplayName="Name &amp; version: major, minor and build (eg 1.2.3)"
+                          Value="6" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Int32"
-                                Value="0"/>
+            <ConstantExpression ResultType=":String"
+                                Value="6"/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
-      <!-- *** SpacerHeight *** -->
-      <ControlProperty Name="SpacerHeight"
-                       PropertyType=":Int32"
-                       CategoryName="Appearance"
-                       EditorVisibility="PropertySheet">
-        <ControlProperty.Attributes>
-          <DisplayName Value="Height" />
-          <Description Value="Enter the amount of vertical space you want" />
-        </ControlProperty.Attributes>
-        <ControlProperty.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":Int32"
-                                Value="0"/>
-          </ScreenExpressionTree>
-        </ControlProperty.DefaultValueSource>
-      </ControlProperty>
-      <!-- ****** -->
     </Control.Properties>
 
-    <!-- *** Collapse attached label and set alignments -->
     <Control.PropertyOverrides>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[FontStyle]"
+        EditorVisibility="PropertySheet"/>
+      <!-- *** Collapse attached label and set alignments -->
       <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
         <ControlPropertyOverride.DefaultValueSource>
           <ScreenExpressionTree>

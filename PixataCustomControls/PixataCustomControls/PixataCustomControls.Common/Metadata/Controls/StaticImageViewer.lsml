@@ -691,11 +691,40 @@
       </ControlProperty>
       <!-- ****** -->
     </Control.Properties>
+
     <Control.PropertyOverrides>
       <ControlPropertyOverride
         Property=":RootControl/Properties[Image]"
         EditorVisibility="PropertySheet"/>
+      <!-- *** Collapse attached label and set alignments -->
+      <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Collapsed"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[VerticalAlignment]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Top"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[HorizontalAlignment]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Left"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
     </Control.PropertyOverrides>
+
     <Control.SupportedDataTypes>
       <SupportedDataType DataType=":String"/>
       <SupportedDataType DataType=":Boolean"/>
