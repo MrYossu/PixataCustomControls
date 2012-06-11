@@ -89,19 +89,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Metadata\Controls\StylableStaticLabel.lsml" />
+    <EmbeddedResource Include="Metadata\Controls\StylableStaticLabel.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\LabelledGroup.lsml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Metadata\Controls\StaticImageViewer.lsml" />
+    <EmbeddedResource Include="Metadata\Controls\StaticImageViewer.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\Spacer.lsml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Metadata\Controls\HorizontalDivider.lsml" />
+    <EmbeddedResource Include="Metadata\Controls\HorizontalDivider.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\VerticalDivider.lsml" />

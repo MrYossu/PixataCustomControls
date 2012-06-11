@@ -4,7 +4,6 @@
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
   <Control Name="StaticToolbar"
-           AttachedLabelSupport="DisplayedByControl"
            SupportedContentItemKind="Value"
            DesignerImageResource="PixataCustomControls.StaticToolbar::ControlImage">
     <Control.Attributes>
@@ -18,7 +17,7 @@
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
-          <DisplayName Value="Button width" />
+          <DisplayName Value="Image width" />
           <Description Value="Set the width of the image for each visible button (ignore if not using images)" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
@@ -33,7 +32,7 @@
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
-          <DisplayName Value="Button height" />
+          <DisplayName Value="Image height" />
           <Description Value="Set the height of the image for each visible button (ignore if not using images)" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
@@ -51,6 +50,12 @@
           <DisplayName Value="Button margin" />
           <Description Value="The margin to be used for all buttons (format l,t,r,b)" />
         </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="0,0,5,0"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
       <!-- *** Button 1 *** -->

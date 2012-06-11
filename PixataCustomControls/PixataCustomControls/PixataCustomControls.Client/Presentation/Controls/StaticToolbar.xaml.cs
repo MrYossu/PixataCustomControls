@@ -37,31 +37,31 @@ namespace PixataCustomControls.Presentation.Controls {
     }
 
     private void Button_Click1(object Sender, RoutedEventArgs E) {
-      FireEvent(1, Button1.Tag.ToString());
+      FireEvent(1, Button1.Tag);
     }
 
     private void Button_Click2(object Sender, RoutedEventArgs E) {
-      FireEvent(2, Button2.Tag.ToString());
+      FireEvent(2, Button2.Tag);
     }
 
     private void Button_Click3(object Sender, RoutedEventArgs E) {
-      FireEvent(3, Button3.Tag.ToString());
+      FireEvent(3, Button3.Tag);
     }
 
     private void Button_Click4(object Sender, RoutedEventArgs E) {
-      FireEvent(4, Button4.Tag.ToString());
+      FireEvent(4, Button4.Tag);
     }
 
     private void Button_Click5(object Sender, RoutedEventArgs E) {
-      FireEvent(5, Button5.Tag.ToString());
+      FireEvent(5, Button5.Tag);
     }
 
     public event EventHandler<StaticToolbarEventArgs> ButtonClick;
 
-    private void FireEvent(int ButtonNumber, string TagText) {
+    private void FireEvent(int ButtonNumber, object ButtonTag) {
       StaticToolbarEventArgs ev = new StaticToolbarEventArgs {
         ButtonNumber = ButtonNumber,
-        TagText = TagText
+        TagText = (ButtonTag != null ? ButtonTag.ToString() : "")
       };
       if (ButtonClick != null) {
         ButtonClick(this, ev);
