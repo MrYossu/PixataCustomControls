@@ -90,7 +90,7 @@
     <Compile Include="Presentation\Controls\HorizontalDivider.xaml.cs">
       <DependentUpon>HorizontalDivider.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Controls\InformationIndexToInformationValueVC.cs" />
+    <Compile Include="Presentation\Controls\ApplicationInformationIndexToInformationValueVC.cs" />
     <Compile Include="Presentation\Controls\IntToBorderVC.cs" />
     <Compile Include="Presentation\Controls\LabelledGroup.xaml.cs">
       <DependentUpon>LabelledGroup.xaml</DependentUpon>

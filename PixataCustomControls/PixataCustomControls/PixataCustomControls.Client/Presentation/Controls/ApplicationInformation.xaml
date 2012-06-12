@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vc="clr-namespace:PixataCustomControls.Presentation.Controls">
   <UserControl.Resources>
-    <vc:InformationIndexToInformationValueVC x:Key="InformationIndexToInformationValueVC" />
+    <vc:ApplicationInformationIndexToInformationValueVC x:Key="InformationIndexToInformationValueVC" />
   </UserControl.Resources>
   <TextBlock Text="{Binding Properties[PixataCustomControls:ApplicationInformation/Information], Converter={StaticResource InformationIndexToInformationValueVC}}" />
 </UserControl>
