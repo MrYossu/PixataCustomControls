@@ -46,7 +46,8 @@
     <Control.PropertyOverrides>
       <ControlPropertyOverride
         Property=":RootControl/Properties[FontStyle]"
-        EditorVisibility="PropertySheet"/>
+        EditorVisibility="PropertySheet"
+        IsReadOnly="False"/>
       <!-- *** Collapse attached label and set alignments -->
       <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
         <ControlPropertyOverride.DefaultValueSource>
