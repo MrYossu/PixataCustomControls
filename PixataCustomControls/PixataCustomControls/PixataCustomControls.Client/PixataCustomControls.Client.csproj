@@ -144,6 +144,12 @@
     <Compile Include="Presentation\Controls\VerticalDivider.xaml.cs">
       <DependentUpon>VerticalDivider.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Controls\WebImage.xaml.cs">
+      <DependentUpon>WebImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Controls\WebImageStatic.xaml.cs">
+      <DependentUpon>WebImageStatic.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Controls\WebLink.xaml.cs">
       <DependentUpon>WebLink.xaml</DependentUpon>
     </Compile>
@@ -215,6 +221,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Presentation\Controls\VerticalDivider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\WebImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\WebImageStatic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

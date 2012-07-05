@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  
+  <Control Name="WebImageStatic"
+    SupportedContentItemKind="Value"
+    DesignerImageResource="PixataCustomControls.WebImageStatic::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Static Web Image" />
+    </Control.Attributes>
+
+    <Control.Properties>
+      <!-- *** Uri *** -->
+      <ControlProperty Name="Uri"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image URI" />
+          <Description Value="The URI (web address) of the image to be displayed" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** Width *** -->
+      <ControlProperty Name="Width"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image width" />
+          <Description Value="The width (in pixels) of the image to be displayed" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
+      <!-- *** Height *** -->
+      <ControlProperty Name="Height"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image height" />
+          <Description Value="The height (in pixels) of the image to be displayed" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+    </Control.Properties>
+
+    <!-- *** Collapse attached label and set alignments -->
+    <Control.PropertyOverrides>
+      <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Collapsed"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[VerticalAlignment]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Top"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[HorizontalAlignment]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Left"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+    </Control.PropertyOverrides>
+
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":String"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>
