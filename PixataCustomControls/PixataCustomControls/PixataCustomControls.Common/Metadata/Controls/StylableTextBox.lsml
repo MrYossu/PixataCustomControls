@@ -353,7 +353,7 @@
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
-                                Value="White"/>
+                                Value="Black"/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
