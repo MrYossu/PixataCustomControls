@@ -8,7 +8,7 @@ using Microsoft.LightSwitch.Presentation;
 using Microsoft.LightSwitch.Presentation.Framework.Helpers;
 
 namespace PixataCustomControls.Presentation.Controls {
-  public partial class WebLink : UserControl {
+  public partial class WebLink : UserControl, IContentVisual {
     public WebLink() {
       InitializeComponent();
     }
@@ -21,6 +21,15 @@ namespace PixataCustomControls.Presentation.Controls {
         WebLinkImage.Visibility = Visibility.Visible;
       } else {
         WebLinkImage.Visibility = Visibility.Collapsed;
+      }
+    }
+
+    public void Show() {
+    }
+
+    public object Control {
+      get {
+        return TheWebLink;
       }
     }
   }
@@ -55,11 +64,11 @@ namespace PixataCustomControls.Presentation.Controls {
 
     private const string ControlTemplate =
       "<DataTemplate" +
-      " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
-      " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
-      " xmlns:ctl=\"clr-namespace:PixataCustomControls.Presentation.Controls;assembly=PixataCustomControls.Client\">" +
-      "<ctl:WebLink/>" +
-      "</DataTemplate>";
+        " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
+        " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
+        " xmlns:ctl=\"clr-namespace:PixataCustomControls.Presentation.Controls;assembly=PixataCustomControls.Client\">" +
+        "<ctl:WebLink/>" +
+        "</DataTemplate>";
 
     #endregion
   }

@@ -8,7 +8,8 @@
     <vc:BoolToVisibilityVC x:Key="BoolToVisibilityVC" />
   </UserControl.Resources>
   <HyperlinkButton NavigateUri="{Binding Value, Mode=TwoWay, Converter={StaticResource UrlValidatorVC}}"
-                   TargetName="_blank">
+                   TargetName="_blank"
+                   Name="TheWebLink">
     <StackPanel Orientation="Horizontal">
       <Image x:Name="WebLinkImage"
              VerticalAlignment="Center"
