@@ -10,18 +10,16 @@
     <Control.Attributes>
       <DisplayName Value="Pixata Labelled Group" />
     </Control.Attributes>
-
     <!-- *** Collapse attached label -->
     <Control.PropertyOverrides>
-      <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
-        <ControlPropertyOverride.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":String"
-                                Value="Collapsed"/>
-          </ScreenExpressionTree>
-        </ControlPropertyOverride.DefaultValueSource>
-      </ControlPropertyOverride>
-    </Control.PropertyOverrides>
+    <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
+      <ControlPropertyOverride.DefaultValueSource>
+        <ScreenExpressionTree>
+          <ConstantExpression ResultType=":String"
+                              Value="Collapsed"/>
+        </ScreenExpressionTree>
+      </ControlPropertyOverride.DefaultValueSource>
+    </ControlPropertyOverride>
+  </Control.PropertyOverrides>
   </Control>
-
 </ModelFragment>

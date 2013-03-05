@@ -61,6 +61,7 @@
     <Compile Include="Editors\OpacityPickerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ApplicationInformationImageProvider.cs" />
+    <Compile Include="Resources\ExpandablePanelImageProvider.cs" />
     <Compile Include="Resources\HorizontalDividerImageProvider.cs" />
     <Compile Include="Resources\LabelledGroupImageProvider.cs" />
     <Compile Include="Resources\MailLinkImageProvider.cs" />
@@ -122,6 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\WebImageStatic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\ExpandablePanel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

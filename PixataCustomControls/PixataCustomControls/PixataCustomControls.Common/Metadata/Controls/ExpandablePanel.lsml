@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="ExpandablePanel"
+           SupportedContentItemKind="Group"
+           AttachedLabelSupport="DisplayedByContainer"
+           DesignerImageResource="PixataCustomControls.ExpandablePanel::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Expandable Panel" />
+    </Control.Attributes>
+
+    <!-- Designer properties -->
+    <Control.Properties>
+      <!-- *** HeaderText *** -->
+      <ControlProperty Name="HeaderText"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Header Text" />
+          <Description Value="The text shown in the vertical panel header" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- *** ExpandedWidth *** -->
+      <ControlProperty Name="ExpandedWidth"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Expanded Width" />
+          <Description Value="The width of the expandable panel when open" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="200"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
+      <!-- *** Header Button Image Size *** -->
+      <ControlProperty Name="HeaderButtonImageSize"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Header Button Image Size" />
+          <Description Value="The size (width and height) of the header image" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="20"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
+      <!-- *** TODO AYS Header Background Colour *** -->
+      <!-- *** TODO AYS Header Text Colour *** -->
+      <!-- *** TODO AYS Header Button Image *** -->
+    </Control.Properties>
+
+    <!-- *** Collapse attached label -->
+    <Control.PropertyOverrides>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[Image]"
+        EditorVisibility="PropertySheet"/>
+      <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Collapsed"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[VerticalAlignment]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Stretch"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+      <ControlPropertyOverride
+        Property=":RootControl/Properties[HorizontalAlignment]">
+        <ControlPropertyOverride.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Left"/>
+          </ScreenExpressionTree>
+        </ControlPropertyOverride.DefaultValueSource>
+      </ControlPropertyOverride>
+    </Control.PropertyOverrides>
+  </Control>
+</ModelFragment>
