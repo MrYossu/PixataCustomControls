@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Control Name="DynamicImageViewer"
+           SupportedContentItemKind="Value"
+           DesignerImageResource="PixataCustomControls.DynamicImageViewer::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Dynamic Image Viewer" />
+    </Control.Attributes>
+
+    <Control.Properties>
+      <!-- General -->
+      <ControlProperty Name="ImageWidth"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image width" />
+          <Description Value="Set the width of the image" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="ImageHeight"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image height" />
+          <Description Value="Set the height of the image" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
+      <!-- Image #1 -->
+      <ControlProperty Name="Image1"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #1" />
+          <Description Value="Image number one" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip1"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #1" />
+          <Description Value="Text for the tool tip for button number one" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- Image #2 -->
+      <ControlProperty Name="Image2"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #2" />
+          <Description Value="Image number two" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip2"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #2" />
+          <Description Value="Text for the tool tip for button number two" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- Image #3 -->
+      <ControlProperty Name="Image3"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #3" />
+          <Description Value="Image number three" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip3"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #3" />
+          <Description Value="Text for the tool tip for button number three" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- Image #4 -->
+      <ControlProperty Name="Image4"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #4" />
+          <Description Value="Image number four" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip4"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #4" />
+          <Description Value="Text for the tool tip for button number four" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <!-- Image #5 -->
+      <ControlProperty Name="Image5"
+                       PropertyType=":String"
+                       UIEditorId="ImageEditor"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image #5" />
+          <Description Value="Image number five" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+      <ControlProperty Name="ToolTip5"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Tool tip #5" />
+          <Description Value="Text for the tool tip for button number five" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+    </Control.Properties>
+
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":Int32"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>

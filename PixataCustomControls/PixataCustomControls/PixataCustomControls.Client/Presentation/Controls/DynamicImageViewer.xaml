@@ -1,0 +1,20 @@
+<UserControl x:Class="PixataCustomControls.Presentation.Controls.DynamicImageViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Margin="0"
+             Loaded="UserControl_Loaded">
+  <Grid>
+    <TextBox Name="TheInt"
+             Width="0"
+             Height="0"
+             Text="{Binding Value, Mode=TwoWay}"
+             TextChanged="TheInt_TextChanged" />
+    <Image x:Name="DynamicImage"
+           Width="{Binding Properties[PixataCustomControls:DynamicImageViewer/ImageWidth]}"
+           Height="{Binding Properties[PixataCustomControls:DynamicImageViewer/ImageHeight]}">
+      <ToolTipService.ToolTip>
+        <ToolTip Name="TheToolTip" />
+      </ToolTipService.ToolTip>
+    </Image>
+  </Grid>
+</UserControl>

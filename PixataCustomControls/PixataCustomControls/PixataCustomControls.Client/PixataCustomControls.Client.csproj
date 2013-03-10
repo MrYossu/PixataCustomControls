@@ -87,6 +87,9 @@
     <Compile Include="Presentation\Controls\BooleanToItalicVC.cs" />
     <Compile Include="Presentation\Controls\BoolToVisibilityVC.cs" />
     <Compile Include="Presentation\Controls\ColourUtils.cs" />
+    <Compile Include="Presentation\Controls\DynamicImageViewer.xaml.cs">
+      <DependentUpon>DynamicImageViewer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Controls\ExpandablePanel.xaml.cs">
       <DependentUpon>ExpandablePanel.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Presentation\Controls\ApplicationInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation\Controls\DynamicImageViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
