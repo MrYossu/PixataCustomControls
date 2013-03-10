@@ -67,14 +67,6 @@
       <ControlPropertyOverride
         Property=":RootControl/Properties[Image]"
         EditorVisibility="PropertySheet"/>
-      <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]">
-        <ControlPropertyOverride.DefaultValueSource>
-          <ScreenExpressionTree>
-            <ConstantExpression ResultType=":String"
-                                Value="Collapsed"/>
-          </ScreenExpressionTree>
-        </ControlPropertyOverride.DefaultValueSource>
-      </ControlPropertyOverride>
       <ControlPropertyOverride
         Property=":RootControl/Properties[VerticalAlignment]">
         <ControlPropertyOverride.DefaultValueSource>
