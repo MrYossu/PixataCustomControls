@@ -14,11 +14,11 @@ namespace PixataCustomControls.Presentation.Controls {
       var templateXaml =
         @"<ControlTemplate " +
 #if SILVERLIGHT
- "xmlns='http://schemas.microsoft.com/client/2007' " +
+          "xmlns='http://schemas.microsoft.com/client/2007' " +
 #else
                     "xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' " +
 #endif
- "xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>" +
+          "xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>" +
           "<Grid Background=\"{TemplateBinding Background}\">" +
           "<TextBlock x:Name=\"TextBlock\" TextAlignment=\"Center\"/>" +
           "</Grid>" +
@@ -63,15 +63,17 @@ namespace PixataCustomControls.Presentation.Controls {
     }
 
     private void CreateVerticalText(string text) {
-      _text = text;
-      if (null != _textBlock) {
-        bool first = true;
-        foreach (var c in _text) {
-          if (!first) {
-            _textBlock.Inlines.Add(new LineBreak());
+      if (!string.IsNullOrWhiteSpace(text)) {
+        _text = text;
+        if (null != _textBlock) {
+          bool first = true;
+          foreach (var c in _text) {
+            if (!first) {
+              _textBlock.Inlines.Add(new LineBreak());
+            }
+            _textBlock.Inlines.Add(new Run {Text = c.ToString()});
+            first = false;
           }
-          _textBlock.Inlines.Add(new Run { Text = c.ToString() });
-          first = false;
         }
       }
     }
