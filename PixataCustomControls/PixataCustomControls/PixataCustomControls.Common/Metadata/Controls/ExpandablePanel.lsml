@@ -63,12 +63,36 @@
     </Control.Properties>
 
     <!-- *** Collapse attached label -->
+    <Control.PropertySources>
+      <!--override the AttachedLabelPosition for the label that is shown for the smart layout itself-->
+      <ControlPropertySource Property=":RootControl/Properties[AttachedLabelPosition]">
+        <ControlPropertySource.Source>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Collapsed" />
+          </ScreenExpressionTree>
+        </ControlPropertySource.Source>
+      </ControlPropertySource>
+    </Control.PropertySources>
+
+    <Control.ChildItemPropertySources>
+      <!--sets AttachedLabelPosition to LeftAligned for all of the children-->
+      <ControlPropertySource Property=":RootControl/Properties[AttachedLabelPosition]">
+        <ControlPropertySource.Source>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="LeftAligned" />
+          </ScreenExpressionTree>
+        </ControlPropertySource.Source>
+      </ControlPropertySource>
+    </Control.ChildItemPropertySources>
+
     <Control.PropertyOverrides>
-      <ControlPropertyOverride
-        Property=":RootControl/Properties[Image]"
-        EditorVisibility="PropertySheet"/>
-      <ControlPropertyOverride
-        Property=":RootControl/Properties[VerticalAlignment]">
+      <ControlPropertyOverride Property=":RootControl/Properties[AttachedLabelPosition]"
+                               EditorVisibility="NotDisplayed" />
+      <ControlPropertyOverride Property=":RootControl/Properties[Image]"
+                               EditorVisibility="PropertySheet"/>
+      <ControlPropertyOverride Property=":RootControl/Properties[VerticalAlignment]">
         <ControlPropertyOverride.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
@@ -76,8 +100,7 @@
           </ScreenExpressionTree>
         </ControlPropertyOverride.DefaultValueSource>
       </ControlPropertyOverride>
-      <ControlPropertyOverride
-        Property=":RootControl/Properties[HorizontalAlignment]">
+      <ControlPropertyOverride Property=":RootControl/Properties[HorizontalAlignment]">
         <ControlPropertyOverride.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
@@ -86,5 +109,11 @@
         </ControlPropertyOverride.DefaultValueSource>
       </ControlPropertyOverride>
     </Control.PropertyOverrides>
+
+    <!-- defines a placeholder for every child item in the smart layout -->
+    <!--<Control.Placeholders>
+      <Placeholder DisplayName="Item"
+                   Name="ItemTemplate" />
+    </Control.Placeholders>-->
   </Control>
 </ModelFragment>
