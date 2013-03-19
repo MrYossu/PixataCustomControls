@@ -24,6 +24,17 @@
         </ControlProperty.Attributes>
       </ControlProperty>
 
+      <!-- *** HeaderText *** -->
+      <ControlProperty Name="ExpandOnCreated"
+                       PropertyType=":Boolean"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Initially Expanded" />
+          <Description Value="Check this box to have the panel expanded when the screen first loads. If left clear, it will be collapsed (default)" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
       <!-- *** ExpandedWidth *** -->
       <ControlProperty Name="ExpandedWidth"
                        PropertyType=":Int32"

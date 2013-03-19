@@ -18,16 +18,28 @@ namespace PixataCustomControls.Presentation.Controls {
       IContentItem contentItem = (IContentItem)DataContext;
       ImageSource userImageSource = ImagePropertyHelper.GetImageSource(contentItem);
       ExpanderImage.Source = userImageSource ?? DefaultImage.Source;
+      if (ExpandOnCreated.IsChecked.HasValue && ExpandOnCreated.IsChecked.Value) {
+        ExpandPanel();
+      }
     }
 
     private void Grid_MouseLeftButtonUp(object sender, MouseButtonEventArgs e) {
       if (_isExpanded) {
-        rotateImageCollapse.Begin();
-        VisualStateManager.GoToState(this, "Closed", true);
+        CollapsePanel();
       } else {
-        rotateImageExpand.Begin();
-        VisualStateManager.GoToState(this, "Open", true);
+        ExpandPanel();
       }
+    }
+
+    private void CollapsePanel() {
+      rotateImageCollapse.Begin();
+      VisualStateManager.GoToState(this, "Closed", true);
+      _isExpanded = !_isExpanded;
+    }
+
+    private void ExpandPanel() {
+      rotateImageExpand.Begin();
+      VisualStateManager.GoToState(this, "Open", true);
       _isExpanded = !_isExpanded;
     }
   }

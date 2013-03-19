@@ -41,6 +41,10 @@
         <RowDefinition Height="Auto" />
         <RowDefinition Height="*" />
       </Grid.RowDefinitions>
+      <CheckBox Name="ExpandOnCreated"
+                Width="0"
+                Height="0"
+                IsChecked="{Binding Properties[PixataCustomControls:ExpandablePanel/ExpandOnCreated]}"/>
       <Image Name="DefaultImage"
              Width="0"
              Height="0"
