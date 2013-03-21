@@ -149,6 +149,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\DynamicImageViewer.lsml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Metadata\Controls\DynamicColourViewer.lsml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

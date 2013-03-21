@@ -78,6 +78,7 @@
     <Compile Include="Editors\OpacityPickerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ApplicationInformationImageProvider.cs" />
+    <Compile Include="Resources\DynamicColourViewerImageProvider.cs" />
     <Compile Include="Resources\DynamicImageViewerImageProvider.cs" />
     <Compile Include="Resources\ExpandablePanelImageProvider.cs" />
     <Compile Include="Resources\HorizontalDividerImageProvider.cs" />
@@ -147,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ControlImages\DynamicImageViewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlImages\DynamicColourViewer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

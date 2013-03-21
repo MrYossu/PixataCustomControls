@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelFragment
+  xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  
+  <Control Name="DynamicColourViewer"
+    SupportedContentItemKind="Value"
+    DesignerImageResource="PixataCustomControls.DynamicColourViewer::ControlImage">
+    <Control.Attributes>
+      <DisplayName Value="Pixata Dynamic Colour Viewer" />
+    </Control.Attributes>
+
+    <Control.Properties>
+      <!-- General -->
+      <ControlProperty Name="Width"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image width" />
+          <Description Value="Set the width of the block" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+      <ControlProperty Name="Height"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Image height" />
+          <Description Value="Set the height of the block" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="32"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
+      <ControlProperty Name="Colour1"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Colour #1" />
+          <Description Value="Colour for any block mapped to number 1" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <ControlProperty Name="Colour2"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Colour #2" />
+          <Description Value="Colour for any block mapped to number 2" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <ControlProperty Name="Colour3"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Colour #3" />
+          <Description Value="Colour for any block mapped to number 3" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <ControlProperty Name="Colour4"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Colour #4" />
+          <Description Value="Colour for any block mapped to number 4" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+      <ControlProperty Name="Colour5"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Colour #5" />
+          <Description Value="Colour for any block mapped to number 5" />
+        </ControlProperty.Attributes>
+      </ControlProperty>
+
+    </Control.Properties>
+
+    <Control.SupportedDataTypes>
+      <SupportedDataType DataType=":Int32"/>
+    </Control.SupportedDataTypes>
+  </Control>
+
+</ModelFragment>
