@@ -24,19 +24,21 @@ namespace PixataCustomControls.Presentation.Controls {
     }
 
     private void SetImage() {
-      int imageNumber = Int32.Parse(TheInt.Text);
-      if (imageNumber > 0 && imageNumber <= 5) {
-        IContentItem contentItem = (IContentItem)DataContext;
-        string imageResourceId = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/Image" + imageNumber];
-        if (!string.IsNullOrEmpty(imageResourceId)) {
-          IServiceProxy proxy = VsExportProviderService.GetServiceFromCache<IServiceProxy>();
-          ImageSource source = (ImageSource)proxy.ResourceService.GetResource(imageResourceId, CultureInfo.CurrentCulture);
-          DynamicImage.Source = source;
-        } else {
-          DynamicImage.Source = null;
+      int imageNumber;
+      if (Int32.TryParse(TheInt.Text, out imageNumber)) {
+        if (imageNumber > 0 && imageNumber <= 5) {
+          IContentItem contentItem = (IContentItem)DataContext;
+          string imageResourceId = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/Image" + imageNumber];
+          if (!string.IsNullOrEmpty(imageResourceId)) {
+            IServiceProxy proxy = VsExportProviderService.GetServiceFromCache<IServiceProxy>();
+            ImageSource source = (ImageSource)proxy.ResourceService.GetResource(imageResourceId, CultureInfo.CurrentCulture);
+            DynamicImage.Source = source;
+          } else {
+            DynamicImage.Source = null;
+          }
+          string tooltip = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/ToolTip" + imageNumber];
+          TheToolTip.Content = (tooltip == "" ? null : tooltip);
         }
-        string tooltip = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/ToolTip" + imageNumber];
-        TheToolTip.Content = (tooltip == "" ? null : tooltip);
       }
     }
   }

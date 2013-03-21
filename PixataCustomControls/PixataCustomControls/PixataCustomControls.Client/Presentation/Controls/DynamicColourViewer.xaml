@@ -4,6 +4,7 @@
              Loaded="UserControl_Loaded">
   <Grid>
     <TextBox Name="TheInt"
+             IsReadOnly="True"
              Width="0"
              Height="0"
              Text="{Binding Value, Mode=TwoWay}"

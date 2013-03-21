@@ -17,7 +17,7 @@
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
-          <DisplayName Value="Image width" />
+          <DisplayName Value="Width" />
           <Description Value="Set the width of the block" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
@@ -32,7 +32,7 @@
                        CategoryName="Appearance"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
-          <DisplayName Value="Image height" />
+          <DisplayName Value="Height" />
           <Description Value="Set the height of the block" />
         </ControlProperty.Attributes>
         <ControlProperty.DefaultValueSource>
