@@ -72,10 +72,19 @@
     <Compile Include="..\PixataCustomControls.Design\Editors\DisplayNameConverter.cs">
       <Link>Editors\DisplayNameConverter.cs</Link>
     </Compile>
-    <Compile Include="Editors\ClientOpacityPicker.xaml.cs">
+    <Compile Include="Editors\ColourPicker\ClientColourPicker.xaml.cs">
+      <DependentUpon>ClientColourPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\ColourPicker\ColourPicker.cs" />
+    <Compile Include="Editors\ColourPicker\ColourPickerEditor.cs" />
+    <Compile Include="Editors\ColourPicker\ColourSpace.cs" />
+    <Compile Include="Editors\ColourPicker\HSV.cs" />
+    <Compile Include="Editors\ColourPicker\SelectedColourEventArgs.cs" />
+    <Compile Include="Editors\ColourPicker\StringToColourVc.cs" />
+    <Compile Include="Editors\OpacityEditor\ClientOpacityPicker.xaml.cs">
       <DependentUpon>ClientOpacityPicker.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Editors\OpacityPickerEditor.cs" />
+    <Compile Include="Editors\OpacityEditor\OpacityPickerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ApplicationInformationImageProvider.cs" />
     <Compile Include="Resources\DynamicColourViewerImageProvider.cs" />
@@ -126,7 +135,11 @@
     <Resource Include="Resources\ControlImages\MailLink.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Editors\ClientOpacityPicker.xaml">
+    <Page Include="Editors\ColourPicker\ClientColourPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editors\OpacityEditor\ClientOpacityPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,6 +165,7 @@
   <ItemGroup>
     <Resource Include="Resources\ControlImages\DynamicColourViewer.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

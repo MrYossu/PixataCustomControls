@@ -43,54 +43,94 @@
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
+      <!-- Colour1 -->
       <ControlProperty Name="Colour1"
                        PropertyType=":String"
                        CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:ClientColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #1" />
           <Description Value="Colour for any block mapped to number 1" />
         </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Blue"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
+      <!-- Colour2 -->
       <ControlProperty Name="Colour2"
                        PropertyType=":String"
                        CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:ClientColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #2" />
           <Description Value="Colour for any block mapped to number 2" />
         </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Violet"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
+      <!-- Colour3 -->
       <ControlProperty Name="Colour3"
                        PropertyType=":String"
                        CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:ClientColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #3" />
           <Description Value="Colour for any block mapped to number 3" />
         </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="DarkGreen"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
+      <!-- Colour4 -->
       <ControlProperty Name="Colour4"
                        PropertyType=":String"
                        CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:ClientColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #4" />
           <Description Value="Colour for any block mapped to number 4" />
         </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Yellow"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
+      <!-- Colour5 -->
       <ControlProperty Name="Colour5"
                        PropertyType=":String"
                        CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:ClientColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #5" />
           <Description Value="Colour for any block mapped to number 5" />
         </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Purple"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
     </Control.Properties>
