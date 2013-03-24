@@ -8,7 +8,7 @@ namespace PixataCustomControls.Editors.WpfColourPicker {
   [Export(typeof(IPropertyValueEditorProvider))]
   [PropertyValueEditorName("PixataCustomControls:PixataColourPicker")]
   [PropertyValueEditorType("System.String")]
-  public class ColourPickerEditor : IPropertyValueEditorProvider {
+  public class WpfColourPickerEditor : IPropertyValueEditorProvider {
     public IPropertyValueEditor GetEditor(IPropertyEntry Entry) {
       return new Editor();
     }

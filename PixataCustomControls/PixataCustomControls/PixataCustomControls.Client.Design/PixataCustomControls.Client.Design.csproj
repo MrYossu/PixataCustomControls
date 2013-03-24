@@ -76,7 +76,7 @@
       <DependentUpon>SilverlightColourPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="Editors\SilverlightColourPicker\ColourPicker.cs" />
-    <Compile Include="Editors\SilverlightColourPicker\ColourPickerEditor.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\SilverlightColourPickerEditor.cs" />
     <Compile Include="Editors\SilverlightColourPicker\ColourSpace.cs" />
     <Compile Include="Editors\SilverlightColourPicker\HSV.cs" />
     <Compile Include="Editors\SilverlightColourPicker\SelectedColourEventArgs.cs" />

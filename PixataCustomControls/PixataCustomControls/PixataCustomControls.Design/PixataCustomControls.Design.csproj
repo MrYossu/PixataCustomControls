@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Editors\WpfColourPicker\ColourPicker.cs" />
-    <Compile Include="Editors\WpfColourPicker\ColourPickerEditor.cs" />
+    <Compile Include="Editors\WpfColourPicker\WpfColourPickerEditor.cs" />
     <Compile Include="Editors\WpfColourPicker\ColourSpace.cs" />
     <Compile Include="Editors\WpfColourPicker\HSV.cs" />
     <Compile Include="Editors\WpfColourPicker\SelectedColourEventArgs.cs" />
