@@ -160,7 +160,9 @@
                Text="{Binding Path=DisplayName}" />
 
     <cp:ColourPicker Grid.Row="1"
-                        SelectedColour="{Binding Path=PropertyValue.Value, Mode=TwoWay,Converter={StaticResource StringToColourVc}}"
-                        AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}" />
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     SelectedColour="{Binding Path=PropertyValue.Value, Mode=TwoWay,Converter={StaticResource StringToColourVc}}"
+                     AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}" />
   </Grid>
 </UserControl>

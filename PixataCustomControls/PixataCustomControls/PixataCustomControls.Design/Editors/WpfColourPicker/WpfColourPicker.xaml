@@ -157,7 +157,6 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <TextBlock x:Name="EditorLabel"
                Text="{Binding Entry.DisplayName, Mode=OneWay, Converter={StaticResource DisplayNameConverter}}"
@@ -165,14 +164,9 @@
                ToolTip="{Binding Entry.Description, Mode=OneWay}"
                Margin="0,0,0,2" />
 
-    <StackPanel Grid.Row="1"
-                Margin="3"
-                Orientation="Horizontal">
-      <TextBlock Text="Colour: " />
-      <TextBlock Text="{Binding Entry.PropertyValue.Value}" />
-    </StackPanel>
-
     <cp:ColourPicker Grid.Row="2"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
                      NewColour="{Binding Entry.PropertyValue.Value}"
                      SelectedColour="{Binding Entry.PropertyValue.Value, Mode=TwoWay, Converter={StaticResource StringToColourVc}}"
                      AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}"
