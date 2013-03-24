@@ -1,23 +1,23 @@
-﻿<UserControl x:Class="PixataCustomControls.Editors.ColourPicker.ClientColourPicker"
+﻿<UserControl x:Class="PixataCustomControls.Editors.SilverlightColourPicker.SilverlightColourPicker"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="clr-namespace:PixataCustomControls.Editors.ColourPicker"
+             xmlns:cp="clr-namespace:PixataCustomControls.Editors.SilverlightColourPicker"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="400">
 
   <UserControl.Resources>
-    <local:StringToColourVc x:Key="StringToColourVc" />
-    <Style TargetType="local:ColourPicker">
+    <cp:StringToColourVc x:Key="StringToColourVc" />
+    <Style TargetType="cp:ColourPicker">
       <Setter Property="Width"
               Value="200" />
       <Setter Property="Height"
               Value="200" />
       <Setter Property="Template">
         <Setter.Value>
-          <ControlTemplate TargetType="local:ColourPicker">
+          <ControlTemplate TargetType="cp:ColourPicker">
             <StackPanel x:Name="RootElement">
               <StackPanel Orientation="Horizontal">
                 <Canvas Width="20"
@@ -159,7 +159,7 @@
     <TextBlock x:Name="EditorLabel"
                Text="{Binding Path=DisplayName}" />
 
-    <local:ColourPicker Grid.Row="1"
+    <cp:ColourPicker Grid.Row="1"
                         SelectedColour="{Binding Path=PropertyValue.Value, Mode=TwoWay,Converter={StaticResource StringToColourVc}}"
                         AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}" />
   </Grid>

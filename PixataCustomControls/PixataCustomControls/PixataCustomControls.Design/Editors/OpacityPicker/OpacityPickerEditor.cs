@@ -4,7 +4,7 @@ using System.Windows.Markup;
 using Microsoft.LightSwitch.Designers.PropertyPages;
 using Microsoft.LightSwitch.Designers.PropertyPages.UI;
 
-namespace PixataCustomControls.Editors {
+namespace PixataCustomControls.Editors.OpacityPicker {
   [Export(typeof(IPropertyValueEditorProvider))]
   [PropertyValueEditorName("PixataCustomControls:OpacityPicker")]
   [PropertyValueEditorType("System.String")]
@@ -29,7 +29,7 @@ namespace PixataCustomControls.Editors {
       "<DataTemplate" +
       " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
       " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
-      " xmlns:editors=\"clr-namespace:PixataCustomControls.Editors;assembly=PixataCustomControls.Design\">" +
+      " xmlns:editors=\"clr-namespace:PixataCustomControls.Editors.OpacityPicker;assembly=PixataCustomControls.Design\">" +
       "   <editors:OpacityPicker />" +
       "</DataTemplate>";
   }

@@ -54,11 +54,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editors\WpfColourPicker\ColourPicker.cs" />
+    <Compile Include="Editors\WpfColourPicker\ColourPickerEditor.cs" />
+    <Compile Include="Editors\WpfColourPicker\ColourSpace.cs" />
+    <Compile Include="Editors\WpfColourPicker\HSV.cs" />
+    <Compile Include="Editors\WpfColourPicker\SelectedColourEventArgs.cs" />
+    <Compile Include="Editors\WpfColourPicker\StringToColourVc.cs" />
+    <Compile Include="Editors\WpfColourPicker\WpfColourPicker.xaml.cs">
+      <DependentUpon>WpfColourPicker.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Editors\DisplayNameConverter.cs" />
-    <Compile Include="Editors\OpacityPicker.xaml.cs">
+    <Compile Include="Editors\OpacityPicker\OpacityPicker.xaml.cs">
       <DependentUpon>OpacityPicker.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Editors\OpacityPickerEditor.cs" />
+    <Compile Include="Editors\OpacityPicker\OpacityPickerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ApplicationInformationImageProvider.cs" />
     <Compile Include="Resources\DynamicColourViewerImageProvider.cs" />
@@ -109,7 +118,11 @@
     <Resource Include="Resources\ControlImages\MailLink.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Editors\OpacityPicker.xaml">
+    <Page Include="Editors\WpfColourPicker\WpfColourPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editors\OpacityPicker\OpacityPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -135,6 +148,7 @@
   <ItemGroup>
     <Resource Include="Resources\ControlImages\DynamicColourViewer.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

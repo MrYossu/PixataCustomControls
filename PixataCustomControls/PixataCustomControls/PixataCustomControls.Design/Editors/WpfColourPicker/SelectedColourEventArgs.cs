@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Media;
 
-namespace PixataCustomControls.Editors.ColourPicker {
+namespace PixataCustomControls.Editors.WpfColourPicker {
   /// <summary>
   /// Delegate for the SelectedColourChanged event.
   /// </summary>

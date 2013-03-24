@@ -72,15 +72,15 @@
     <Compile Include="..\PixataCustomControls.Design\Editors\DisplayNameConverter.cs">
       <Link>Editors\DisplayNameConverter.cs</Link>
     </Compile>
-    <Compile Include="Editors\ColourPicker\ClientColourPicker.xaml.cs">
-      <DependentUpon>ClientColourPicker.xaml</DependentUpon>
+    <Compile Include="Editors\SilverlightColourPicker\SilverlightColourPicker.xaml.cs">
+      <DependentUpon>SilverlightColourPicker.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Editors\ColourPicker\ColourPicker.cs" />
-    <Compile Include="Editors\ColourPicker\ColourPickerEditor.cs" />
-    <Compile Include="Editors\ColourPicker\ColourSpace.cs" />
-    <Compile Include="Editors\ColourPicker\HSV.cs" />
-    <Compile Include="Editors\ColourPicker\SelectedColourEventArgs.cs" />
-    <Compile Include="Editors\ColourPicker\StringToColourVc.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\ColourPicker.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\ColourPickerEditor.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\ColourSpace.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\HSV.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\SelectedColourEventArgs.cs" />
+    <Compile Include="Editors\SilverlightColourPicker\StringToColourVc.cs" />
     <Compile Include="Editors\OpacityEditor\ClientOpacityPicker.xaml.cs">
       <DependentUpon>ClientOpacityPicker.xaml</DependentUpon>
     </Compile>
@@ -135,7 +135,7 @@
     <Resource Include="Resources\ControlImages\MailLink.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Editors\ColourPicker\ClientColourPicker.xaml">
+    <Page Include="Editors\SilverlightColourPicker\SilverlightColourPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

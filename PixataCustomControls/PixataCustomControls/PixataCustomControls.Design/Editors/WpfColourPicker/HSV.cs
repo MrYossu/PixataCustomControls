@@ -1,4 +1,4 @@
-﻿namespace PixataCustomControls.Editors.ColourPicker {
+﻿namespace PixataCustomControls.Editors.WpfColourPicker {
   /// <summary>
   /// Data structure that represents a HSV value.
   /// </summary>

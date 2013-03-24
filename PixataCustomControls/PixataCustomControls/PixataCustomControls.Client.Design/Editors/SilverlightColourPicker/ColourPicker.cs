@@ -4,7 +4,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace PixataCustomControls.Editors.ColourPicker {
+namespace PixataCustomControls.Editors.SilverlightColourPicker {
   /// <summary>
   /// Represents a Colour Picker control which allows a user to select a colour.
   /// </summary>
@@ -157,7 +157,7 @@ namespace PixataCustomControls.Editors.ColourPicker {
       if (m_hueMonitor == null)
         return;
 
-      Color c = this.SelectedColour;
+      Color c = SelectedColour;
       ColourSpace cs = new ColourSpace();
       HSV hsv = cs.ConvertRgbToHsv(c);
 
@@ -287,19 +287,14 @@ namespace PixataCustomControls.Editors.ColourPicker {
       }
       set {
         SetValue(SelectedColourProperty, value);
-        this.UpdateVisuals();
+        UpdateVisuals();
       }
     }
 
     /// <summary>
     /// SelectedColour Dependency Property.
     /// </summary>
-    public static readonly DependencyProperty SelectedColourProperty =
-      DependencyProperty.Register(
-        "SelectedColour",
-        typeof(Color),
-        typeof(ColourPicker),
-        new PropertyMetadata(new PropertyChangedCallback(SelectedColourPropertyChanged)));
+    public static readonly DependencyProperty SelectedColourProperty = DependencyProperty.Register("SelectedColour", typeof(Color), typeof(ColourPicker), new PropertyMetadata(SelectedColourPropertyChanged));
 
     private static void SelectedColourPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
       ColourPicker p = d as ColourPicker;

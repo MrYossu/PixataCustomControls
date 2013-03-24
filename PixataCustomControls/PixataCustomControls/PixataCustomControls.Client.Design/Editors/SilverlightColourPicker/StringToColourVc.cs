@@ -5,7 +5,7 @@ using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace PixataCustomControls.Editors.ColourPicker {
+namespace PixataCustomControls.Editors.SilverlightColourPicker {
   public class StringToColourVc : IValueConverter {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       try {

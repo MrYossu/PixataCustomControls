@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Media;
 
-namespace PixataCustomControls.Editors.ColourPicker {
+namespace PixataCustomControls.Editors.SilverlightColourPicker {
   /// <summary>
   /// Contains helper methods for use by the ColourPicker control.
   /// </summary>

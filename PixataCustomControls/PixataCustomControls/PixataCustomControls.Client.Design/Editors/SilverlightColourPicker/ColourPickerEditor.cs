@@ -4,10 +4,10 @@ using System.Windows.Markup;
 using Microsoft.LightSwitch.Designers.PropertyPages;
 using Microsoft.LightSwitch.RuntimeEdit;
 
-namespace PixataCustomControls.Editors.ColourPicker {
+namespace PixataCustomControls.Editors.SilverlightColourPicker {
   public class ColourPickerEditor {
     [Export(typeof(IPropertyValueEditorProvider))]
-    [PropertyValueEditorName("PixataCustomControls:ClientColourPicker")]
+    [PropertyValueEditorName("PixataCustomControls:PixataColourPicker")]
     [PropertyValueEditorType("System.String")]
     public class ClientColourPickerEditorEditorProvider : IPropertyValueEditorProvider {
       public IPropertyValueEditor GetEditor(IPropertyEntry entry) {
@@ -25,7 +25,7 @@ namespace PixataCustomControls.Editors.ColourPicker {
           " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
           " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
           " xmlns:editors=\"clr-namespace:PixataCustomControls.Editors.ColourPicker;assembly=PixataCustomControls.Client.Design\">" +
-          "   <editors:ClientColourPicker/>" +
+          "   <editors:SilverlightColourPicker/>" +
           "</DataTemplate>";
     }
   }

@@ -47,7 +47,7 @@
       <ControlProperty Name="Colour1"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:ClientColourPicker"
+                       UIEditorId="PixataCustomControls:PixataColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #1" />
@@ -65,7 +65,7 @@
       <ControlProperty Name="Colour2"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:ClientColourPicker"
+                       UIEditorId="PixataCustomControls:PixataColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #2" />
@@ -83,7 +83,7 @@
       <ControlProperty Name="Colour3"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:ClientColourPicker"
+                       UIEditorId="PixataCustomControls:PixataColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #3" />
@@ -101,7 +101,7 @@
       <ControlProperty Name="Colour4"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:ClientColourPicker"
+                       UIEditorId="PixataCustomControls:PixataColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #4" />
@@ -119,7 +119,7 @@
       <ControlProperty Name="Colour5"
                        PropertyType=":String"
                        CategoryName="Appearance"
-                       UIEditorId="PixataCustomControls:ClientColourPicker"
+                       UIEditorId="PixataCustomControls:PixataColourPicker"
                        EditorVisibility="PropertySheet">
         <ControlProperty.Attributes>
           <DisplayName Value="Colour #5" />
