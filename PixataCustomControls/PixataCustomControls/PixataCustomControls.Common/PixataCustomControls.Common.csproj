@@ -118,7 +118,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Metadata\Controls\WebLink.lsml" />
+    <EmbeddedResource Include="Metadata\Controls\WebLink.lsml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Metadata\Controls\MailLink.lsml" />

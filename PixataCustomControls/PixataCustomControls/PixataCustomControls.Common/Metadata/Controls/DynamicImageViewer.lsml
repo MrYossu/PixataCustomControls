@@ -151,7 +151,7 @@
     </Control.Properties>
 
     <Control.SupportedDataTypes>
-      <SupportedDataType DataType=":Int32"/>
+      <SupportedDataType DataType=":SByte"/>
     </Control.SupportedDataTypes>
   </Control>
 
