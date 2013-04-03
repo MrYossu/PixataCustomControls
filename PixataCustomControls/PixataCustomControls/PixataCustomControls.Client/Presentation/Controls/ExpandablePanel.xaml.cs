@@ -7,7 +7,7 @@ using Microsoft.LightSwitch.Presentation;
 using Microsoft.LightSwitch.Presentation.Framework.Helpers;
 
 namespace PixataCustomControls.Presentation.Controls {
-  public partial class ExpandablePanel {
+  public partial class ExpandablePanel : IContentVisual {
     private bool _isExpanded;
 
     public ExpandablePanel() {
@@ -41,6 +41,32 @@ namespace PixataCustomControls.Presentation.Controls {
       rotateImageExpand.Begin();
       VisualStateManager.GoToState(this, "Open", true);
       _isExpanded = !_isExpanded;
+    }
+
+    public bool IsExpanded {
+      get {
+        return _isExpanded;
+      }
+      set {
+        if (value) {
+          if (!_isExpanded) {
+            ExpandPanel();
+          }
+        } else {
+          if (_isExpanded) {
+            CollapsePanel();
+          }
+        }
+      }
+    }
+
+    public void Show() {
+    }
+
+    public object Control {
+      get {
+        return this;
+      }
     }
   }
 
