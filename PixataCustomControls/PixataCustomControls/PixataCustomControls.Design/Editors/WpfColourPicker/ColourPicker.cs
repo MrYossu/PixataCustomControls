@@ -315,7 +315,12 @@ namespace PixataCustomControls.Editors.WpfColourPicker {
     }
 
     private void SetNewColour(string newColour) {
-      SelectedColour = (Color)(ColorConverter.ConvertFromString(newColour));
+      try {
+        SelectedColour = (Color)(ColorConverter.ConvertFromString(newColour));
+      }
+      catch {
+        SelectedColour = Colors.Orange;
+      }
     }
 
     public string NewColour {
