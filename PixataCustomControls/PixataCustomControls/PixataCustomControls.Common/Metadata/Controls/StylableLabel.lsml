@@ -139,6 +139,41 @@
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
 
+      <!-- *** BorderThickness *** -->
+      <ControlProperty Name="BorderThickness"
+                       PropertyType=":Int32"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Border thickness" />
+          <Description Value="Enter the thickness of the image border (zero for no border)" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":Int32"
+                                Value="0"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
+      <!-- *** ShadowColour *** -->
+      <ControlProperty Name="ShadowColour"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       UIEditorId="PixataCustomControls:PixataColourPicker"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Drop shadow colour" />
+          <Description Value="Enter the colour for the drop shadow" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Black"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
       <!-- *** ShadowDirection *** -->
       <ControlProperty Name="ShadowDirection"
                        PropertyType=":Int32"
