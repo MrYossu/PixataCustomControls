@@ -155,6 +155,7 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <TextBlock x:Name="EditorLabel"
                Text="{Binding Path=DisplayName}" />
@@ -163,6 +164,27 @@
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top"
                      SelectedColour="{Binding Path=PropertyValue.Value, Mode=TwoWay,Converter={StaticResource StringToColourVc}}"
-                     AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}" />
+                     AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}"
+                     x:Name="TheColourPicker" />
+    <Grid Grid.Row="2"
+          Margin="3">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <TextBlock Text="Colour: "
+                 VerticalAlignment="Center" />
+      <TextBox Name="ColourTb"
+               Grid.Column="1"
+               TextChanged="ColourTb_OnTextChanged"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Center" />
+      <TextBlock Name="ErrorTb"
+                 Text=" Invalid colour"
+                 Foreground="Red"
+                 Grid.Column="2"
+                 VerticalAlignment="Center" />
+    </Grid>
   </Grid>
 </UserControl>

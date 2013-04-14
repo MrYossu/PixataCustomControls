@@ -157,6 +157,7 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <TextBlock x:Name="EditorLabel"
                Text="{Binding Entry.DisplayName, Mode=OneWay, Converter={StaticResource DisplayNameConverter}}"
@@ -164,12 +165,33 @@
                ToolTip="{Binding Entry.Description, Mode=OneWay}"
                Margin="0,0,0,2" />
 
-    <cp:ColourPicker Grid.Row="2"
+    <cp:ColourPicker Grid.Row="1"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top"
                      NewColour="{Binding Entry.PropertyValue.Value}"
                      SelectedColour="{Binding Entry.PropertyValue.Value, Mode=TwoWay, Converter={StaticResource StringToColourVc}}"
                      AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}"
                      x:Name="TheColourPicker" />
+
+    <Grid Grid.Row="2"
+          Margin="3">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <TextBlock Text="Colour: "
+                 VerticalAlignment="Center" />
+      <TextBox Name="ColourTb"
+               Grid.Column="1"
+               TextChanged="ColourTb_OnTextChanged"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Center" />
+      <TextBlock Name="ErrorTb"
+                 Text=" Invalid colour"
+                 Foreground="Red"
+                 Grid.Column="2"
+                 VerticalAlignment="Center" />
+    </Grid>
   </Grid>
 </UserControl>
