@@ -136,7 +136,7 @@
     </Control.Properties>
 
     <Control.SupportedDataTypes>
-      <SupportedDataType DataType=":SByte"/>
+      <SupportedDataType DataType=":Int32"/>
     </Control.SupportedDataTypes>
   </Control>
 
