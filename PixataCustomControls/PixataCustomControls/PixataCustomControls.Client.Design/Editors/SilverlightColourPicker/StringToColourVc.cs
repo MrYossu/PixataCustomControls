@@ -24,8 +24,13 @@ namespace PixataCustomControls.Editors.SilverlightColourPicker {
     }
 
     private static Color StringToColour(string colourName) {
-      Line lne = (Line)XamlReader.Load("<Line xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\" Fill=\"" + colourName + "\" />");
-      return (Color)lne.Fill.GetValue(SolidColorBrush.ColorProperty);
+      try {
+        Line lne = (Line)XamlReader.Load("<Line xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\" Fill=\"" + colourName + "\" />");
+        return (Color)lne.Fill.GetValue(SolidColorBrush.ColorProperty);
+      }
+      catch {
+        return ColourPicker.DefaultColour;
+      }
     }
   }
 }
