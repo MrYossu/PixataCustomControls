@@ -163,7 +163,7 @@
     <cp:ColourPicker Grid.Row="1"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top"
-                     SelectedColour="{Binding Path=PropertyValue.Value, Mode=TwoWay,Converter={StaticResource StringToColourVc}}"
+                     SelectedColour="{Binding Path=PropertyValue.Value, Mode=TwoWay, Converter={StaticResource StringToColourVc}}"
                      AutomationProperties.LabeledBy="{Binding ElementName=EditorLabel}"
                      x:Name="TheColourPicker" />
     <Grid Grid.Row="2"

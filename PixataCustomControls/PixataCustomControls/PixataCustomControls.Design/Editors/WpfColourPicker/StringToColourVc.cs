@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
@@ -9,8 +10,10 @@ namespace PixataCustomControls.Editors.WpfColourPicker {
       Color returnValue = Colors.Orange;
       try {
         returnValue = (Color)(ColorConverter.ConvertFromString(value.ToString()));
+        Debug.WriteLine("Successfully converted " + value + " to " + returnValue.ToString());
       }
-      catch {
+      catch (Exception ex) {
+        Debug.WriteLine("Exception converting " + value + ": " + ex.Message);
       }
       return returnValue;
     }
