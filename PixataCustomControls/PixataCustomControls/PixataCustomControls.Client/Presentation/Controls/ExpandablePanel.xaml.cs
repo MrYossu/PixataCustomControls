@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.Composition;
 using System.Windows;
 using System.Windows.Input;
@@ -31,16 +32,26 @@ namespace PixataCustomControls.Presentation.Controls {
       }
     }
 
+    public event EventHandler OnCollapsed;
+
     private void CollapsePanel() {
       rotateImageCollapse.Begin();
       VisualStateManager.GoToState(this, "Closed", true);
       _isExpanded = !_isExpanded;
+      if (OnCollapsed != null) {
+        OnCollapsed(this, new EventArgs());
+      }
     }
+
+    public event EventHandler OnExpanded;
 
     private void ExpandPanel() {
       rotateImageExpand.Begin();
       VisualStateManager.GoToState(this, "Open", true);
       _isExpanded = !_isExpanded;
+      if (OnExpanded != null) {
+        OnExpanded(this, new EventArgs());
+      }
     }
 
     public bool IsExpanded {
