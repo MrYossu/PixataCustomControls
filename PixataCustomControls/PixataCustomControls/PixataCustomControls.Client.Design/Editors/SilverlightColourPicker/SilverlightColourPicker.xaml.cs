@@ -19,7 +19,7 @@ namespace PixataCustomControls.Editors.SilverlightColourPicker {
 
     private void ColourTb_OnTextChanged(object sender, TextChangedEventArgs e) {
       Color convertedColour = (Color)vc.Convert(ColourTb.Text, null, null, null);
-      if (convertedColour != Colors.Orange) {
+      if (convertedColour != ColourPicker.DefaultColour) {
         ErrorTb.Visibility = Visibility.Collapsed;
         TheColourPicker.SelectedColour = convertedColour;
       } else {

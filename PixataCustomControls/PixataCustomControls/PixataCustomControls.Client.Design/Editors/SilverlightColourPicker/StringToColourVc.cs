@@ -12,7 +12,7 @@ namespace PixataCustomControls.Editors.SilverlightColourPicker {
         return StringToColour(value.ToString());
       }
       catch {
-        return Colors.Orange;
+        return ColourPicker.DefaultColour;
       }
     }
 

@@ -7,7 +7,7 @@ using System.Windows.Media;
 namespace PixataCustomControls.Editors.WpfColourPicker {
   public class StringToColourVc : IValueConverter {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
-      Color returnValue = Colors.Orange;
+      Color returnValue = ColourPicker.DefaultColour;
       try {
         returnValue = (Color)(ColorConverter.ConvertFromString(value.ToString()));
         Debug.WriteLine("Successfully converted " + value + " to " + returnValue.ToString());

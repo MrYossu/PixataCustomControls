@@ -15,6 +15,8 @@ namespace PixataCustomControls.Editors.WpfColourPicker {
     /// </summary>
     public event SelectedColourChangedHandler SelectedColourChanged;
 
+    public static Color DefaultColour = Colors.DarkGray;
+
     /// <summary>
     /// Event fired when the selected colour is changing.  This event occurs when the 
     /// left-mouse button is pressed and the user is moving the mouse.
@@ -319,7 +321,7 @@ namespace PixataCustomControls.Editors.WpfColourPicker {
         SelectedColour = (Color)(ColorConverter.ConvertFromString(newColour));
       }
       catch {
-        SelectedColour = Colors.Orange;
+        SelectedColour = DefaultColour;
       }
     }
 
