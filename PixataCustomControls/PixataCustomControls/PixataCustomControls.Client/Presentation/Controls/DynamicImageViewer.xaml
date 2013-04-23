@@ -8,6 +8,7 @@
              IsReadOnly="True"
              Width="0"
              Height="0"
+             Foreground="{x:Null}"
              Text="{Binding Value, Mode=TwoWay}"
              TextChanged="TheInt_TextChanged" />
     <Image x:Name="DynamicImage"
