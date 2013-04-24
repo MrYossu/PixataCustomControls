@@ -38,6 +38,8 @@ namespace PixataCustomControls.Presentation.Controls {
           }
           string tooltip = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/ToolTip" + imageNumber];
           TheToolTip.Content = (tooltip == "" ? null : tooltip);
+        } else if (imageNumber == 0) {
+          DynamicImage.Source = null;
         }
       }
     }
