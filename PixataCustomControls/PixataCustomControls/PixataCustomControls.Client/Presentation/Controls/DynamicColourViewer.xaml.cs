@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Resources;
-
 using Microsoft.LightSwitch.Presentation;
 
 namespace PixataCustomControls.Presentation.Controls {
@@ -31,12 +30,15 @@ namespace PixataCustomControls.Presentation.Controls {
     }
 
     private void SetBlock() {
-      int colourNumber = Int32.Parse(TheInt.Text);
-      if (colourNumber > 0 && colourNumber <= 5) {
+      int colourNumber;
+      DynamicBlock.Fill = null;
+      if (Int32.TryParse(TheInt.Text, out colourNumber) && colourNumber > 0 && colourNumber <= 5) {
         IContentItem contentItem = (IContentItem)DataContext;
-        string colour = (string)contentItem.Properties["PixataCustomControls:DynamicColourViewer/Colour" + colourNumber];
-        if (!string.IsNullOrEmpty(colour)) {
-          DynamicBlock.Fill = new SolidColorBrush(ColourFromString(colour));
+        if (contentItem != null) {
+          string colour = (string)contentItem.Properties["PixataCustomControls:DynamicColourViewer/Colour" + colourNumber];
+          if (!string.IsNullOrEmpty(colour)) {
+            DynamicBlock.Fill = new SolidColorBrush(ColourFromString(colour));
+          }
         }
       }
     }
@@ -76,7 +78,7 @@ namespace PixataCustomControls.Presentation.Controls {
     #region Constants
 
     private const string ControlTemplate =
-        "<DataTemplate" +
+      "<DataTemplate" +
         " xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"" +
         " xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"" +
         " xmlns:ctl=\"clr-namespace:PixataCustomControls.Presentation.Controls;assembly=PixataCustomControls.Client\">" +

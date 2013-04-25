@@ -25,21 +25,18 @@ namespace PixataCustomControls.Presentation.Controls {
 
     private void SetImage() {
       int imageNumber;
-      if (Int32.TryParse(TheInt.Text, out imageNumber)) {
-        if (imageNumber > 0 && imageNumber <= 5) {
-          IContentItem contentItem = (IContentItem)DataContext;
+      DynamicImage.Source = null;
+      if (Int32.TryParse(TheInt.Text, out imageNumber) && imageNumber > 0 && imageNumber <= 5) {
+        IContentItem contentItem = (IContentItem)DataContext;
+        if (contentItem != null) {
           string imageResourceId = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/Image" + imageNumber];
           if (!string.IsNullOrEmpty(imageResourceId)) {
             IServiceProxy proxy = VsExportProviderService.GetServiceFromCache<IServiceProxy>();
             ImageSource source = (ImageSource)proxy.ResourceService.GetResource(imageResourceId, CultureInfo.CurrentCulture);
             DynamicImage.Source = source;
-          } else {
-            DynamicImage.Source = null;
+            string tooltip = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/ToolTip" + imageNumber];
+            TheToolTip.Content = (tooltip == "" ? null : tooltip);
           }
-          string tooltip = (string)contentItem.Properties["PixataCustomControls:DynamicImageViewer/ToolTip" + imageNumber];
-          TheToolTip.Content = (tooltip == "" ? null : tooltip);
-        } else if (imageNumber == 0) {
-          DynamicImage.Source = null;
         }
       }
     }
