@@ -15,6 +15,7 @@
            FontWeight="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontBold], Converter={StaticResource BooleanToBoldVC}}"
            FontStyle="{Binding Properties[PixataCustomControls:StylableTextBox/StylableFontItalic], Converter={StaticResource BooleanToItalicVC}}"
            AcceptsReturn="{Binding Properties[PixataCustomControls:StylableTextBox/AcceptsReturn]}"
+           TextAlignment="{Binding Properties[PixataCustomControls:StylableTextBox/TextAlignment]}"
            TextWrapping="Wrap"
            VerticalContentAlignment="Top"
            ToolTipService.ToolTip="{Binding Description}" />

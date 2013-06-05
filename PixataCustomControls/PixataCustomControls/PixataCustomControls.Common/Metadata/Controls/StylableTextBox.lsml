@@ -110,7 +110,7 @@
         <ControlProperty.DefaultValueSource>
           <ScreenExpressionTree>
             <ConstantExpression ResultType=":String"
-                                Value="Black"/>
+                                Value="#FFD3D1D1"/>
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
@@ -131,6 +131,33 @@
           </ScreenExpressionTree>
         </ControlProperty.DefaultValueSource>
       </ControlProperty>
+
+      <!-- TextAlignment -->
+      <ControlProperty Name="TextAlignment"
+                       PropertyType=":String"
+                       CategoryName="Appearance"
+                       EditorVisibility="PropertySheet">
+        <ControlProperty.Attributes>
+          <DisplayName Value="Text Alignment" />
+          <Description Value="Set the horizontal alignment of the text" />
+          <SupportedValuesExclusive />
+          <SupportedValue DisplayName="Left"
+                          Value="Left" />
+          <SupportedValue DisplayName="Center"
+                          Value="Center" />
+          <SupportedValue DisplayName="Right"
+                          Value="Right" />
+          <SupportedValue DisplayName="Justify"
+                          Value="Justify" />
+        </ControlProperty.Attributes>
+        <ControlProperty.DefaultValueSource>
+          <ScreenExpressionTree>
+            <ConstantExpression ResultType=":String"
+                                Value="Left"/>
+          </ScreenExpressionTree>
+        </ControlProperty.DefaultValueSource>
+      </ControlProperty>
+
       <!-- ****** -->
     </Control.Properties>
     <Control.SupportedDataTypes>
