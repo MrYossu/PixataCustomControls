@@ -1,7 +1,8 @@
 <UserControl x:Class="PixataCustomControls.Presentation.Controls.WebImage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <Image Source="{Binding StringValue}"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Image Name="TheImage"
+         Source="{Binding StringValue}"
          Width="{Binding Properties[PixataCustomControls:WebImage/Width]}"
          Height="{Binding Properties[PixataCustomControls:WebImage/Height]}" />
 </UserControl>
