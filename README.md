@@ -6,7 +6,7 @@ I wrote these controls, partly for my own interest (I love experimenting with ne
 
 As I don't do much Lightswitch development any more, but still get a lot of interest in the controls, I decided to make them open source, so anyone can develop them.
 
-The original documentation for the controls can be found at: http://dotnetwhatnot.pixata.co.uk/PixataCustomControls/Default.aspx
+The original documentation for the controls can be found at: http://dotnetwhatnot.pixata.co.uk/PixataCustomControls/Default.aspx (**Note** Due to moving my blog, the two links on this page don't work any more)
 
 At some point, the documentation should be moved to GitHub, and updated as the controls are (hopefully) taken forward.
 
